@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collecting Data</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+        <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore-compat.js"></script>
+        <script>
+          // Your web app's Firebase configuration
+          const firebaseConfig = {
+              apiKey: "AIzaSyBx97x-JufARMMPekWkRGT_6Flfid2DDR8",
+              authDomain: "vydamore-ea949.firebaseapp.com",
+              databaseURL: "https://vydamore-ea949-default-rtdb.asia-southeast1.firebasedatabase.app",
+              projectId: "vydamore-ea949",
+              storageBucket: "vydamore-ea949.appspot.com",
+              messagingSenderId: "363045889390",
+              appId: "1:363045889390:web:ade4517744f380e40f8d7f",
+              measurementId: "G-0H8E7EQZ9M"
+          };
+        
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          const db = firebase.firestore();
+        </script>
+        
+        
+
+</head>
+<div class="pre-loader gradient-color">
+    <div class="loader"></div>
+</div>
+<body class="container">
+    <h1>Submit Your Speech</h1>
+    <form id="speechForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="text">Speech:</label>
+        <textarea id="text" name="text" rows="10" cols="30" required></textarea>
+        <br><br>
+        <button type="button" onclick="submitSpeech()">Submit</button>
+    </form>
+
+    <h2>List of Speeches</h2>
+    <div id="speechList"></div>
+
+    <h1>RSVP Form</h1>
+    <form id="rsvpForm">
+        <label for="rsvpName">Name:</label>
+        <input type="text" id="rsvpName" name="rsvpName" required>
+        <br><br>
+        <label for="rsvpCount">Number of People:</label>
+        <input type="number" id="rsvpCount" name="rsvpCount" min="1" required>
+        <br><br>
+        <button type="button" onclick="submitRSVP()">Submit</button>
+    </form>
+
+    <h2>RSVP List</h2>
+    <div id="rsvpList"></div>
+
+    
+    
+    
+    <script src="./js/app.js?v=002"></script>
+    <script src='./js/jquery-3.2.1.min.js' type="text/javascript"></script>
+    <script src='./js/aos.min.js' type="text/javascript"></script>
+<script>
+var $window = $(window);
+
+//Fading Out Loader
+$window.on("load", function() {
+    $(".pre-loader").fadeOut("slow");
+    AOS.refresh();
+});
+</script>
+
+</body>
+</html>
