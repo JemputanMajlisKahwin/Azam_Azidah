@@ -39,12 +39,10 @@
     <div class="loader"></div>
 </div>
 <body class="container">
-    <div id="front">
-      <div class="contents">
-        <p id="front-title">Lorem!</p>
-        <img id="front-pic" src="http://www.freeiconspng.com/uploads/multimedia-photo-icon-31.png">
-        <button onclick="open_card()">Click to open</button>
-      </div>
+    <div id="bodySliding">
+        <button class="enter-btn">Click to Enter</button>
+        <div class="sliding-doors"></div>
+        <div class="sliding-doors"></div>
     </div>
     <div id="inside">
       <div class="contents">
@@ -106,6 +104,15 @@ $window.on("load", function() {
         function close_card() {
         document.getElementById('front').className = '';
         }
+
+
+        document.querySelector('.enter-btn').addEventListener('click', function() {
+    const doors = document.querySelectorAll('.sliding-doors');
+    doors.forEach(door => {
+        door.classList.toggle('open');
+    });
+});
+
     </script>   
     
     

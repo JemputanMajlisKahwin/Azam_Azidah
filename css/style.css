@@ -78,14 +78,42 @@ button {
   transition: background 1s ease;
 }
 
-button:hover {
-  background: #d3cee4;
+
+#bodySliding {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #333; /* Background color for visibility */
 }
 
-.author {
-  font-family: monospace;
-  text-align: right;
-  margin-bottom: 20px;
+.enter-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sliding-doors {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: #555;
+  top: 0;
+  transition: transform 1s ease-in-out;
+}
+
+.sliding-doors:first-child {
+  left: 0;
+}
+
+.sliding-doors:last-child {
+  right: 0;
+}
+
+.sliding-doors.open {
+  transform: translateX(100%);
 }
 /* ------------------------------------- */
 /* *. 3 - Pre Loader Styles ............ */
