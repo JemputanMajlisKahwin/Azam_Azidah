@@ -119,6 +119,10 @@ right: 0;
 
 .sliding-doors.open.totheleft {transform: translateX(-100%);}
 .sliding-doors.open.totheright {transform: translateX(100%);}
+
+#bodySliding.fade {
+  opacity: 0;
+}
 /* ------------------------------------- */
 /* *. 3 - Pre Loader Styles ............ */
 /* ------------------------------------- */

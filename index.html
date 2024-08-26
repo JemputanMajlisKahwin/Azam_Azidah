@@ -97,21 +97,20 @@ $window.on("load", function() {
 });
 </script>
     <script>
-        function open_card() {
-        document.getElementById('front').className = 'open-card';
-        }
-
-        function close_card() {
-        document.getElementById('front').className = '';
-        }
-
-
-        document.querySelector('.enter-btn').addEventListener('click', function() {
+document.querySelector('.enter-btn').addEventListener('click', function() {
     const doors = document.querySelectorAll('.sliding-doors');
+    const bodySliding = document.getElementById('bodySliding');
+    
     doors.forEach(door => {
         door.classList.toggle('open');
     });
+
+    // Add the fade class after a slight delay to ensure doors start sliding
+    setTimeout(() => {
+        bodySliding.classList.toggle('fade');
+    }, 100); // Adjust delay if needed
 });
+
 
     </script>   
     
