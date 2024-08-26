@@ -87,6 +87,8 @@ background-color: #333; /* Background color for visibility */
 z-index: 9;
 }
 
+.container{padding:0;}
+
 .enter-btn {
 position: absolute;
 top: 50%;
