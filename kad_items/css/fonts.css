@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Oleo Script Swash Caps';
-    src: url('/fonts/custom/Oleo_Script_Swash_Caps/OleoScriptSwashCaps-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Oleo_Script_Swash_Caps/OleoScriptSwashCaps-Regular.ttf') format('truetype');
     font-weight: 400 700;
     font-style: normal;
     /* CURSIVE */
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Dancing Script';
-    src: url('/fonts/custom/Dancing_Script/DancingScript-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/custom/Dancing_Script/DancingScript-VariableFont_wght.ttf') format('truetype');
     font-weight: 400 700;
     font-style: normal;
     /* CURSIVE */
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'Tangerine';
-    src: url('/fonts/custom/Tangerine/Tangerine-Bold.ttf') format('truetype');
+    src: url('../fonts/custom/Tangerine/Tangerine-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
     /* CURSIVE */
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: 'Leckerli One';
-    src: url('/fonts/custom/Leckerli_One/LeckerliOne-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Leckerli_One/LeckerliOne-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CURSIVE */
@@ -32,7 +32,7 @@
 
 @font-face {
     font-family: 'Lobster';
-    src: url('/fonts/custom/Lobster/Lobster-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Lobster/Lobster-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CURSIVE */
@@ -40,7 +40,7 @@
 
 @font-face {
     font-family: 'Alex Brush';
-    src: url('/fonts/custom/Alex_Brush/AlexBrush-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Alex_Brush/AlexBrush-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CURSIVE */
@@ -48,7 +48,7 @@
 
 @font-face {
     font-family: 'Galada';
-    src: url('/fonts/custom/Galada/Galada-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Galada/Galada-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CURSIVE */
@@ -56,7 +56,7 @@
 
 @font-face {
     font-family: 'Pacifico';
-    src: url('/fonts/custom/Pacifico/Pacifico-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Pacifico/Pacifico-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CURSIVE */
@@ -64,7 +64,7 @@
 
 @font-face {
     font-family: 'Homemade_Apple';
-    src: url('/fonts/custom/Homemade_Apple/HomemadeApple-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Homemade_Apple/HomemadeApple-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CURSIVE */
@@ -72,7 +72,7 @@
 
 @font-face {
     font-family: 'Fasthand';
-    src: url('/fonts/custom/Fasthand/Fasthand-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Fasthand/Fasthand-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CURSIVE */
@@ -80,7 +80,7 @@
 
 @font-face {
     font-family: 'MonteCarlo';
-    src: url('/fonts/custom/MonteCarlo/MonteCarlo-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/MonteCarlo/MonteCarlo-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CURSIVE */
@@ -88,7 +88,7 @@
 
 @font-face {
     font-family: 'Pinyon Script';
-    src: url('/fonts/custom/Pinyon_Script/PinyonScript-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Pinyon_Script/PinyonScript-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CURSIVE */
@@ -96,7 +96,7 @@
 
 @font-face {
     font-family: 'Great Vibes';
-    src: url('/fonts/custom/Great_Vibes/GreatVibes-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Great_Vibes/GreatVibes-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CURSIVE */
@@ -104,7 +104,7 @@
 
 @font-face {
     font-family: 'Courgette';
-    src: url('/fonts/custom/Courgette/Courgette-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Courgette/Courgette-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CURSIVE */
@@ -112,7 +112,7 @@
 
 @font-face {
     font-family: 'Kaushan Script';
-    src: url('/fonts/custom/Kaushan_Script/KaushanScript-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Kaushan_Script/KaushanScript-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CURSIVE */
@@ -120,7 +120,7 @@
 
 @font-face {
     font-family: 'Imperial Script';
-    src: url('/fonts/custom/Imperial_Script/ImperialScript-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Imperial_Script/ImperialScript-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CURSIVE */
@@ -128,7 +128,7 @@
 
 @font-face {
     font-family: 'Allura';
-    src: url('/fonts/custom/Allura/Allura-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Allura/Allura-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CURSIVE */
@@ -136,7 +136,7 @@
 
 @font-face {
     font-family: 'Arizonia';
-    src: url('/fonts/custom/Arizonia/Arizonia-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Arizonia/Arizonia-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CURSIVE */
@@ -144,7 +144,7 @@
 
 @font-face {
     font-family: 'Delicious Handrawn';
-    src: url('/fonts/custom/Delicious_Handrawn/DeliciousHandrawn-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Delicious_Handrawn/DeliciousHandrawn-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CURSIVE */
@@ -152,7 +152,7 @@
 
 @font-face {
     font-family: 'Niconne';
-    src: url('/fonts/custom/Niconne/Niconne-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Niconne/Niconne-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CURSIVE */
@@ -160,7 +160,7 @@
 
 @font-face {
     font-family: 'Lemonada';
-    src: url('/fonts/custom/Lemonada/Lemonada-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/custom/Lemonada/Lemonada-VariableFont_wght.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CURSIVE */
@@ -168,7 +168,7 @@
 
 @font-face {
     font-family: 'Caveat';
-    src: url('/fonts/custom/Caveat/Caveat-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/custom/Caveat/Caveat-VariableFont_wght.ttf') format('truetype');
     font-weight: 400 700;
     font-style: normal;
     /* CURSIVE */
@@ -176,7 +176,7 @@
 
 @font-face {
     font-family: 'Sacramento';
-    src: url('/fonts/custom/Sacramento/Sacramento-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Sacramento/Sacramento-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CURSIVE */
@@ -184,7 +184,7 @@
 
 @font-face {
     font-family: 'Petit Formal Script';
-    src: url('/fonts/custom/Petit_Formal_Script/PetitFormalScript-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Petit_Formal_Script/PetitFormalScript-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CURSIVE */
@@ -192,7 +192,7 @@
 
 @font-face {
     font-family: 'Shadows Into Light';
-    src: url('/fonts/custom/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CURSIVE */
@@ -200,7 +200,7 @@
 
 @font-face {
     font-family: 'Pattaya';
-    src: url('/fonts/custom/Pattaya/Pattaya-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Pattaya/Pattaya-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CURSIVE */
@@ -208,7 +208,7 @@
 
 @font-face {
     font-family: 'Ephesis';
-    src: url('/fonts/custom/Ephesis/Ephesis-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Ephesis/Ephesis-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CURSIVE */
@@ -216,7 +216,7 @@
 
 @font-face {
     font-family: 'Charm';
-    src: url('/fonts/custom/Charm/Charm-Bold.ttf') format('truetype');
+    src: url('../fonts/custom/Charm/Charm-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
     /* CURSIVE */
@@ -224,7 +224,7 @@
 
 @font-face {
     font-family: 'Merienda';
-    src: url('/fonts/custom/Merienda/Merienda-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/custom/Merienda/Merienda-VariableFont_wght.ttf') format('truetype');
     font-weight: 300 900;
     font-style: normal;
     /* CURSIVE */
@@ -232,7 +232,7 @@
 
 @font-face {
     font-family: 'Euphoria Script';
-    src: url('/fonts/custom/Euphoria_Script/EuphoriaScript-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Euphoria_Script/EuphoriaScript-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CURSIVE */
@@ -240,7 +240,7 @@
 
 @font-face {
     font-family: 'The Nautigal';
-    src: url('/fonts/custom/The_Nautigal/TheNautigal-Bold.ttf') format('truetype');
+    src: url('../fonts/custom/The_Nautigal/TheNautigal-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
     /* CURSIVE */
@@ -250,7 +250,7 @@
 
 @font-face {
     font-family: 'Laila';
-    src: url('/fonts/custom/Laila/Laila-SemiBold.ttf') format('truetype');
+    src: url('../fonts/custom/Laila/Laila-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     /* SAN-SERIF */
@@ -258,7 +258,7 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url('/fonts/custom/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/custom/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
     font-weight: 400 900;
     font-style: normal;
     /* SAN-SERIF */
@@ -266,7 +266,7 @@
 
 @font-face {
     font-family: 'Righteous';
-    src: url('/fonts/custom/Righteous/Righteous-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Righteous/Righteous-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* SAN-SERIF */
@@ -274,7 +274,7 @@
 
 @font-face {
     font-family: 'Alkatra';
-    src: url('/fonts/custom/Alkatra/Alkatra-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/custom/Alkatra/Alkatra-VariableFont_wght.ttf') format('truetype');
     font-weight: 400 700;
     font-style: normal;
     /* SAN-SERIF */
@@ -282,7 +282,7 @@
 
 @font-face {
     font-family: 'Kufam';
-    src: url('/fonts/custom/Kufam/Kufam-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/custom/Kufam/Kufam-VariableFont_wght.ttf') format('truetype');
     font-weight: 400 900;
     font-style: normal;
     /* SAN-SERIF */
@@ -290,7 +290,7 @@
 
 @font-face {
     font-family: 'Titan One';
-    src: url('/fonts/custom/Titan_One/TitanOne-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Titan_One/TitanOne-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* SAN-SERIF */
@@ -298,7 +298,7 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/custom/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/custom/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
     font-weight: 400 900;
     font-style: normal;
     /* SAN-SERIF */
@@ -306,7 +306,7 @@
 
 @font-face {
     font-family: 'Quicksand';
-    src: url('/fonts/custom/Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/custom/Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
     font-weight: 600 700;
     font-style: normal;
     /* SAN-SERIF */
@@ -314,7 +314,7 @@
 
 @font-face {
     font-family: 'Oswald';
-    src: url('/fonts/custom/Oswald/Oswald-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/custom/Oswald/Oswald-VariableFont_wght.ttf') format('truetype');
     font-weight: 400 700;
     font-style: normal;
     /* SAN-SERIF */
@@ -322,7 +322,7 @@
 
 @font-face {
     font-family: 'Tsukimi Rounded';
-    src: url('/fonts/custom/Tsukimi_Rounded/TsukimiRounded-Medium.ttf') format('truetype');
+    src: url('../fonts/custom/Tsukimi_Rounded/TsukimiRounded-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     /* SAN-SERIF */
@@ -330,7 +330,7 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: url('/fonts/custom/Roboto/Roboto-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Roboto/Roboto-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* SAN-SERIF */
@@ -338,7 +338,7 @@
 
 @font-face {
     font-family: 'Roboto Condensed';
-    src: url('/fonts/custom/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/custom/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf') format('truetype');
     font-weight: 400 900;
     font-style: normal;
     /* SAN-SERIF */
@@ -346,7 +346,7 @@
 
 @font-face {
     font-family: 'Source Sans Pro';
-    src: url('/fonts/custom/Source_Sans_3/SourceSans3-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/custom/Source_Sans_3/SourceSans3-VariableFont_wght.ttf') format('truetype');
     font-weight: 400 900;
     font-style: normal;
     /* SAN-SERIF */
@@ -354,7 +354,7 @@
 
 @font-face {
     font-family: 'Anton';
-    src: url('/fonts/custom/Anton/Anton-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Anton/Anton-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* SAN-SERIF */
@@ -362,7 +362,7 @@
 
 @font-face {
     font-family: 'Secular One';
-    src: url('/fonts/custom/Secular_One/SecularOne-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Secular_One/SecularOne-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* SAN-SERIF */
@@ -372,7 +372,7 @@
 
 @font-face {
     font-family: 'Noto Serif';
-    src: url('/fonts/custom/Noto_Serif/NotoSerif-VariableFont_wdth,wght.ttf') format('truetype');
+    src: url('../fonts/custom/Noto_Serif/NotoSerif-VariableFont_wdth,wght.ttf') format('truetype');
     font-weight: 400 900;
     font-style: normal;
     /* SERIF */
@@ -380,7 +380,7 @@
 
 @font-face {
     font-family: 'Noto Serif Italic';
-    src: url('/fonts/custom/Noto_Serif/NotoSerif-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+    src: url('../fonts/custom/Noto_Serif/NotoSerif-Italic-VariableFont_wdth,wght.ttf') format('truetype');
     font-weight: 400 900;
     font-style: italic;
     /* SERIF */
@@ -388,7 +388,7 @@
 
 @font-face {
     font-family: 'Abril Fatface';
-    src: url('/fonts/custom/Abril_Fatface/AbrilFatface-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Abril_Fatface/AbrilFatface-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* SERIF */
@@ -396,7 +396,7 @@
 
 @font-face {
     font-family: 'Lora';
-    src: url('/fonts/custom/Lora/Lora-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/custom/Lora/Lora-VariableFont_wght.ttf') format('truetype');
     font-weight: 400 700;
     font-style: normal;
     /* SERIF */
@@ -404,7 +404,7 @@
 
 @font-face {
     font-family: 'Playfair Display';
-    src: url('/fonts/custom/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/custom/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
     font-weight: 400 700;
     font-style: normal;
     /* SERIF */
@@ -412,7 +412,7 @@
 
 @font-face {
     font-family: 'Cinzel Decorative';
-    src: url('/fonts/custom/Cinzel_Decorative/CinzelDecorative-Bold.ttf') format('truetype');
+    src: url('../fonts/custom/Cinzel_Decorative/CinzelDecorative-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
     /* SERIF */
@@ -420,7 +420,7 @@
 
 @font-face {
     font-family: 'EB Garamond';
-    src: url('/fonts/custom/EB_Garamond/EBGaramond-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/custom/EB_Garamond/EBGaramond-VariableFont_wght.ttf') format('truetype');
     font-weight: 400 800;
     font-style: normal;
     /* SERIF */
@@ -428,7 +428,7 @@
 
 @font-face {
     font-family: 'Fredericka the Great';
-    src: url('/fonts/custom/Fredericka_the_Great/FrederickatheGreat-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Fredericka_the_Great/FrederickatheGreat-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* SERIF */
@@ -436,7 +436,7 @@
 
 @font-face {
     font-family: 'Castoro Titling';
-    src: url('/fonts/custom/Castoro_Titling/CastoroTitling-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Castoro_Titling/CastoroTitling-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* SERIF */
@@ -444,7 +444,7 @@
 
 @font-face {
     font-family: 'Libre Caslon Text';
-    src: url('/fonts/custom/Libre_Caslon_Text/LibreCaslonText-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Libre_Caslon_Text/LibreCaslonText-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* SERIF */
@@ -452,7 +452,7 @@
 
 @font-face {
     font-family: 'Instrument Serif';
-    src: url('/fonts/custom/Instrument_Serif/InstrumentSerif-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Instrument_Serif/InstrumentSerif-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* SERIF */
@@ -460,7 +460,7 @@
 
 @font-face {
     font-family: 'Libre Baskerville';
-    src: url('/fonts/custom/Libre_Baskerville/LibreBaskerville-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Libre_Baskerville/LibreBaskerville-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* SERIF */
@@ -468,7 +468,7 @@
 
 @font-face {
     font-family: 'Arbutus Slab';
-    src: url('/fonts/custom/Arbutus_Slab/ArbutusSlab-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Arbutus_Slab/ArbutusSlab-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* SERIF */
@@ -476,7 +476,7 @@
 
 @font-face {
     font-family: 'Crimson Text';
-    src: url('/fonts/custom/Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* SERIF */
@@ -484,7 +484,7 @@
 
 @font-face {
     font-family: 'Ma Shan Zheng';
-    src: url('/fonts/custom/Ma_Shan_Zheng/MaShanZheng-Regular.ttf') format('truetype');
+    src: url('../fonts/custom/Ma_Shan_Zheng/MaShanZheng-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     /* CHINESE SIMPLIFIED */
