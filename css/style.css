@@ -282,3 +282,248 @@ body {
       box-shadow: 0.5em -1em rgba(61, 184, 143, 0.75), -0.5em 1em rgba(233, 169, 32, 0.75); }
     100% {
       box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75); } }
+
+
+
+
+
+
+      :root {
+        --color: #5D5D5D;
+        --body: #FFFFFF;
+        --color-light: #5D5D5D39;
+        --color-med-light: #5D5D5D79;
+        --color-nama-pendek: #5D5D5D;
+        --font-color: Black;
+        --cover-teks-color: Black;
+              }
+        
+              * {
+        font-family: 'Raleway', sans-serif;;
+              }
+        
+              .contain {
+        border-left: 1px solid #ededed;
+        border-right: 1px solid #ededed;
+              }
+        
+              .posisi-cover {
+        left: 50%;
+        top: 50%;
+              }
+        
+              .body-color,
+              .button_utama {
+        background-color: var(--color) !important;
+              }
+        
+              .c-utama,
+              #timer,
+              #timer2 {
+        color: var(--color);
+              }
+        
+              .teks-color {
+        color: var(--font-color);
+              }
+        
+              .icon {
+        fill: var(--color);
+              }
+        
+              .c-cover {
+        color: #5D5D5D;
+              }
+        
+              .nama-pendek,
+              .dan {
+        color: #5D5D5D;
+        font-family: 'Dancing Script', cursive;;
+        line-height: 1em;
+              }
+        
+              .nama-pendek {
+        font-size: clamp(20px, 14vw, 40px);
+              }
+        
+              .dan {
+        font-size: clamp(20px, 14vw - 2vw, 30px);
+              }
+        
+              .nama-parents,
+              .dan1 {
+        font-family: 'Noto Serif', serif;;
+        font-size: 18px;
+        line-height: 1.3em;
+              }
+        
+              .nama-panjang,
+              .dan2 {
+        color: var(--font-color);
+        font-family: 'Dancing Script', cursive;;
+        font-size: 25px;
+        line-height: 1.3em;
+              }
+        
+              .bg-nama,
+              .gate_bg {
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+              }
+        
+              .bg-nama {
+        background-image: url("https://ekaddigital.com/gambar/gambar/pcTZKsnK0H.jpg");
+              }
+        
+              .gate_bg {
+        background-image: url("https://ekaddigital.com/gambar/gambar/pcTZKsnK0H.jpg");
+              }
+        
+              .nota {
+        background-color: var(--color-light);
+        border: 1px solid var(--color);
+        color: var(--color);
+              }
+        
+              #loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        z-index: 9999;
+              }
+        
+              .initial {
+        font-family: 'initialStyle1', serif;
+        color: #5D5D5D;
+        font-size: 150px;
+        line-height: 1em;
+              }
+        
+              .calendar__day-selected .calendar__day-box {
+        border: 2px solid var(--color-nama-pendek);
+              }
+        
+              .calendar__month,
+              .calendar__year,
+              .calendar__weekday,
+              .calendar__day-selected {
+        color: var(--color-nama-pendek) !important;
+              }
+        
+              .ctc,
+              .calendar__day-other,
+              .calendar__day-text {
+        color: var(--cover-teks-color) !important;
+              }
+        
+              .calendar__weekday,
+              .calendar__day {
+        font-family: 'Raleway', sans-serif;;
+        font-weight: ;
+        font-size: px;
+              }
+        
+              /* SEPERATOR */
+              /* TOP */
+              .custom-shape-divider-top-1683648653,
+              .custom-shape-divider-top-dua {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+              }
+        
+              .custom-shape-divider-top-1683648653 svg {
+        position: relative;
+        display: block;
+        width: calc(153% + 1.3px);
+        height: 87px;
+              }
+        
+              .custom-shape-divider-top-dua svg {
+        position: relative;
+        display: block;
+        width: calc(160% + 1.3px);
+        height: 50px;
+              }
+        
+              .custom-shape-divider-top-1683648653 .shape-fill {
+        fill: #FFFFFF90;
+              }
+        
+              .custom-shape-divider-top-dua .shape-fill {
+        fill: #FFFFFF;
+              }
+        
+              /* BOTTOM */
+              .custom-shape-divider-bottom-1683647660,
+              .custom-shape-divider-bottom-dua {
+        position: absolute;
+        bottom: -1px;
+        width: 500px;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+              }
+        
+              .custom-shape-divider-bottom-1683647660 svg {
+        position: relative;
+        display: block;
+        width: calc(153% + 1.3px);
+        height: 87px;
+              }
+        
+              .custom-shape-divider-bottom-dua svg {
+        position: relative;
+        display: block;
+        width: calc(153% + 1.3px);
+        height: 50px;
+              }
+        
+              .custom-shape-divider-bottom-1683647660 .shape-fill {
+        fill: #FFFFFF90;
+              }
+        
+              .custom-shape-divider-bottom-dua .shape-fill {
+        fill: #FFFFFF;
+              }
+        
+              @media only screen and (min-device-width: 250px) and (max-device-width: 812px) {
+        .ekad-width {
+        border: none;
+        }
+        
+        .contain {
+        border: none;
+        }
+        
+        .nama_pendek1 {
+        font-size: clamp(20px, 14vw, 60px);
+        }
+        
+        .custom-shape-divider-bottom-1683647660,
+        .custom-shape-divider-bottom-dua {
+        width: 100%;
+        }
+        
+        .custom-shape-divider-top-1683648653 svg,
+        .custom-shape-divider-bottom-1683647660 svg {
+        width: calc(150% + 1.3px);
+        height: 50px;
+        }
+        
+        .custom-shape-divider-top-dua svg,
+        .custom-shape-divider-bottom-dua svg {
+        width: calc(150% + 1.3px);
+        height: 20px;
+        }
+              }
