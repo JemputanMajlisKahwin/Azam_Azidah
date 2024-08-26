@@ -69,7 +69,7 @@ body {
   margin-bottom: 40px;
   }
   
-  .enter-btn {width: 450px;height: 450px;border: 1px solid #28223d;border-radius: 50%;background: #615294;color: white;display: block;margin: auto;transition: background 1s ease;}
+  /* .enter-btn {width: 450px;height: 450px;border: 1px solid #28223d;border-radius: 50%;background: #615294;color: white;display: block;margin: auto;transition: all 1s ease;} */
   
   
   .font-fam-curl {
@@ -83,7 +83,7 @@ body {
   
   .container{padding:0;}
   
-  .enter-btn {
+  /* .enter-btn { 
   position: absolute;
   top: 50%;
   left: 50%;
@@ -93,15 +93,16 @@ body {
   cursor: pointer;
   z-index: 10;
   transition: all 1s ease-in-out ;
-  }
+  /* } */
   
   .sliding-doors {
   position: absolute;
   width: 50%;
   height: 100%;
-  background-color: #555;
+  background-color: #e2e2e2;
   top: 0;
   transition: transform 1s ease-in-out 1s;
+  z-index:-1;
   }
   
   .sliding-doors:first-child {
@@ -128,7 +129,7 @@ body {
   }
   
   
-  @media (max-width:768px){
+  /* @media (max-width:768px){
 
   .enter-btn {
     width: 350px;
@@ -186,7 +187,7 @@ body {
   }
 }
 
-
+ */
   /* ------------------------------------- */
   /* *. 3 - Pre Loader Styles ............ */
   /* ------------------------------------- */
@@ -380,7 +381,7 @@ body {
               }
         
               .gate_bg {
-        background-image: url("https://ekaddigital.com/gambar/gambar/pcTZKsnK0H.jpg");
+        /* background-image: url("https://ekaddigital.com/gambar/gambar/pcTZKsnK0H.jpg"); */
               }
         
               .nota {
