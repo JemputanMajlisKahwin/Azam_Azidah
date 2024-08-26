@@ -69,11 +69,12 @@ body {
   margin-bottom: 40px;
   }
   
-  .enter-btn {width: 25vw;height: 25vw;border: 1px solid #28223d;border-radius: 50%;background: #615294;color: white;display: block;margin: auto;transition: background 1s ease;}
+  .enter-btn {width: 450px;height: 450px;border: 1px solid #28223d;border-radius: 50%;background: #615294;color: white;display: block;margin: auto;transition: background 1s ease;}
   
   
   .font-fam-curl {
-      font-size: 4vw;display:block
+      font-size: 100px;
+      display:block
   }
   
   #bodySliding {position: absolute;width: 100%;height: 100vh;z-index: 9;transition: all 1s ease-in-out 1.3s;top: 0;}
@@ -127,6 +128,65 @@ body {
   }
   
   
+  @media (max-width:768px){
+
+  .enter-btn {
+    width: 350px;
+    height: 350px;
+  }
+
+  .font-fam-curl {
+    font-size: 80px;
+
+  }
+}
+
+
+@media (max-width:500px){
+
+  .enter-btn {
+    width: 250px;
+    height: 250px;
+  }
+
+  .font-fam-curl {
+    font-size: 35px;
+
+  }
+}
+
+
+@media (max-width:400px){
+
+  .enter-btn {
+    width: 200px;
+    height: 200px;
+  }
+
+
+  .font-fam-curl {
+    font-size: 25px;
+
+  }
+
+}
+
+
+
+@media (max-width:300px){
+
+  .enter-btn {
+    width: 150px;
+    height: 150px;
+  }
+
+  .font-fam-curl {
+    font-size: 20px;
+
+  }
+}
+
+
   /* ------------------------------------- */
   /* *. 3 - Pre Loader Styles ............ */
   /* ------------------------------------- */

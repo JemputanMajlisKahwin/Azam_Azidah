@@ -100,24 +100,26 @@ $window.on("load", function() {
 document.querySelector('.enter-btn').addEventListener('click', function() {
     const doors = document.querySelectorAll('.sliding-doors');
     const bodySliding = document.getElementById('bodySliding');
-    const EntbuttonClick = document.getElementById('enterbtn');
+    const EntbuttonClick = document.querySelector('.enter-btn');
     
+    // Trigger sliding doors and fade effect
     doors.forEach(door => {
         door.classList.toggle('open');
     });
 
-    // Add the fade class after a slight delay to ensure doors start sliding
+    // Add the fade class after a slight delay
     setTimeout(() => {
         bodySliding.classList.toggle('fade');
-    }, 100); // Adjust delay if needed
-
-    setTimeout(() => {
         EntbuttonClick.classList.toggle('fade');
     }, 100); // Adjust delay if needed
 
-
-
+    // Set display: none after the fade transition completes
+    setTimeout(() => {
+        bodySliding.style.display = 'none';
+        EntbuttonClick.style.display = 'none';
+    }, 2050); // 1 second for the transition + 100ms delay
 });
+
 
 
     </script>   
@@ -130,4 +132,4 @@ document.querySelector('.enter-btn').addEventListener('click', function() {
 
 
 
-  <
+  
