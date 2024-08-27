@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Y:: Majlis Perkahwinan Azam &amp; Azidah</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-
-
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Y:: Majlis Perkahwinan Azam &amp; Azidah</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		
+		
+		
+		
         
-
+		
         <link rel="stylesheet" href="./css/style.css?v=003">
-
-
-        		
+		
+		
+		
 		<meta property="og:title" content="Raikan Cinta | Azam &amp; Azidah">
 		<meta name="og:description" content="Tekan link untuk lihat undangan">
 		<meta property="og:image" content="https://ekaddigital.com/gambar/gambar/u2dBGkWab7.jpg">
@@ -38,7 +37,7 @@
 		
 		
 		<meta name="google" value="notranslate">
-		
+		<meta name="csrf-token" content="spSYjGEwo2jsVH3BHlskRg04emHt3I995wJzlNSU">
 		
 		
 		<link rel="stylesheet" href="./kad_items/css/fonts.css">
@@ -55,515 +54,582 @@
 		
 		
 		
-		<script src="./kad_items/js/jquery.js.download"></script>
-		<script src="./kad_items/js/bootstrap.bundle.min.js.download"></script>
-		<script src="./kad_items/js/autosize.js.download"></script>
-		<script src="./kad_items/js/intlTelInput.min.js.download"></script>
-		<script src="./kad_items/js/splide.min.js.download"></script>
-		<script src="./kad_items/js/cc.js.download"></script>
-
-
-
+		<script type="text/javascript" src="./kad_items/js/jquery.js"></script>
+		<script type="text/javascript" src="./kad_items/js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="./kad_items/js/autosize.js"></script>
+		<script type="text/javascript" src="./kad_items/js/intlTelInput.min.js"></script>
+		<script type="text/javascript" src="./kad_items/js/splide.min.js"></script>
+		<script type="text/javascript" src="./kad_items/js/cc.js"></script>
+		
+		
+		
         <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app-compat.js"></script>
         <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore-compat.js"></script>
-        <script src="./kad_items/js/app.js.download"></script>
-
+		
+		
         <script>
-          // Your web app's Firebase configuration
-          const firebaseConfig = {
-              apiKey: "AIzaSyBx97x-JufARMMPekWkRGT_6Flfid2DDR8",
-              authDomain: "vydamore-ea949.firebaseapp.com",
-              databaseURL: "https://vydamore-ea949-default-rtdb.asia-southeast1.firebasedatabase.app",
-              projectId: "vydamore-ea949",
-              storageBucket: "vydamore-ea949.appspot.com",
-              messagingSenderId: "363045889390",
-              appId: "1:363045889390:web:ade4517744f380e40f8d7f",
-              measurementId: "G-0H8E7EQZ9M"
-          };
+			// Your web app's Firebase configuration
+			const firebaseConfig = {
+				apiKey: "AIzaSyBx97x-JufARMMPekWkRGT_6Flfid2DDR8",
+				authDomain: "vydamore-ea949.firebaseapp.com",
+				databaseURL: "https://vydamore-ea949-default-rtdb.asia-southeast1.firebasedatabase.app",
+				projectId: "vydamore-ea949",
+				storageBucket: "vydamore-ea949.appspot.com",
+				messagingSenderId: "363045889390",
+				appId: "1:363045889390:web:ade4517744f380e40f8d7f",
+				measurementId: "G-0H8E7EQZ9M"
+			};
+			
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+			const db = firebase.firestore();
+		</script>
         
-          // Initialize Firebase
-          firebase.initializeApp(firebaseConfig);
-          const db = firebase.firestore();
-        </script>
         
-        
-
-</head>
-
-
-<div class="pre-loader gradient-color">
-    <div class="loader"></div>
-</div>
-<body class="body_container"  data-aos-easing="ease" data-aos-duration="2000" data-aos-delay="0">
-    <div id="bodySliding">
-        <!-- <button id="enterbtn" class="enter-btn"><span class="Name-one font-fam-curl">Click</span><span class="Name-two font-fam-curl">Here</span></button> -->
-  
+		
+	</head>
+	
+	
+	<div class="pre-loader gradient-color">
+		<div class="loader"></div>
+	</div>
+	<body class="body_container"   style="overflow: auto;" data-aos-easing="ease" data-aos-duration="2000" data-aos-delay="0">
+		<div id="bodySliding">
+			<!-- <button id="enterbtn" class="enter-btn"><span class="Name-one font-fam-curl">Click</span><span class="Name-two font-fam-curl">Here</span></button> -->
+			
+			
+			<section id="loader" style="display: none;">
+				<img class="logo" src="./kad_items/image/WhatsApp-Image-2020-06-26-at-3.36.32-PM.jpeg" alt="">
+			</section>
           	<!-- GATE -->
-       <div class="gate" id="gate">
-        <div class="gate_bg px-5 py-5">
-            <div class="position-absolute top-50 start-50 translate-middle text-center">
-                <div class="c-color">
-                </div>
-                
-                <div class="animate__animated animate__fadeInLeft animate__slow animate__delay-1s">
-                    <hr class="c-cover opacity-100">
-                </div>
-                
-                <div class="c-cover">
-                    <div class="oswald animate__animated animate__fadeInUp animate__slow uppercase">
-                        SELAMAT DATANG
-                    </div>
-                </div>
-                <div class="c-cover pre-line animate__animated animate__zoomIn animate__slow d-1s mt-3">Nama</div>
-                
-                <div class="animate__animated animate__fadeInRight animate__slow animate__delay-1s">
-                    <hr class="c-cover opacity-100">
-                </div>
-                
-                
-                
-                <div class="animate__animated animate__fadeInUp animate__slow d-05s mt-4">
-                    
-                    <button id="enterbtn"  type="button" class="close_gate minimal_btn w-100 enter-btn"><i class="bi bi-box-arrow-in-right me-1"></i> Masuk</button>
-                </div>
-
-                
-            </div>
+			<div class="gate" id="gate">
+				<div class="gate_bg px-5 py-5">
+					<div class="position-absolute top-50 start-50 translate-middle text-center">
+						<div class="c-color">
+						</div>
+						
+						<div class="animate__animated animate__fadeInLeft animate__slow animate__delay-1s">
+							<hr class="c-cover opacity-100">
+						</div>
+						
+						<div class="c-cover">
+							<div class="oswald animate__animated animate__fadeInUp animate__slow uppercase">
+								SELAMAT DATANG
+							</div>
+						</div>
+						<div class="c-cover pre-line animate__animated animate__zoomIn animate__slow d-1s mt-3">Nama</div>
+						
+						<div class="animate__animated animate__fadeInRight animate__slow animate__delay-1s">
+							<hr class="c-cover opacity-100">
+						</div>
+						
+						
+						
+						<div class="animate__animated animate__fadeInUp animate__slow d-05s mt-4">
+							
+							<button id="enterbtn"  type="button" class="close_gate minimal_btn w-100 enter-btn"><i class="bi bi-box-arrow-in-right me-1"></i> Masuk</button>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="sliding-doors totheleft"></div>
+				<div class="sliding-doors totheright"></div>
+			</div>
+		</div>
+		
+		
+		<script src="./kad_items/js/app.js"></script>
+		<div  class="ekad-width contain bg-white text-center">
+			<div id="bubble"><canvas data-generated="false" style="width: 100% !important; height: 100% !important; position: fixed !important; z-index: 1 !important; top: 0px !important; left: 0px !important; pointer-events: none;" aria-hidden="true" width="728" height="1457"></canvas></div>
+			
+			
+			<div class="">
+				<div class="position-relative cover-box">
+					<img class=" filter" src="" alt="" width="100%" height="auto">
+					
+					<!-- SEPERATOR -->
+					<div class="custom-shape-divider-bottom-1683647660">
+						<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+							<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+						</svg>
+					</div>
+					<div class="custom-shape-divider-bottom-dua">
+						<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+							<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+						</svg>
+					</div>
+					<!-- SEPERATOR -->
+				</div>
+				
+			</div>
+			
+			
+			
+			
+			<div class="mt-4 px-3 aos-init" data-aos="none">
+				<div class="">
+					<div class="mb-4 mt-3 aos-init" data-aos="zoom-in">
+						<img class="w-75" src="./kad_items/image/bismillah_a_black.svg" alt="">
+					</div>
+					
+					<div class="mb-4 mt-3 aos-init" data-aos="zoom-in">
+						<img class="w-50" src="./kad_items/image/kerawang_b_black.svg" alt="">
+					</div>
+					
+					
+					<div class="mb-3 aos-init" data-aos="zoom-in">
+						<div class="text-break pre-line">Dengan penuh kesyukuran, kami</div>
+					</div>
+					
+					
+					<div data-aos="zoom-in" class="aos-init">
+						
+						<div class="c-utama">
+							<div class="nama-parents pre-line ">ABD RASHID BIN SELAMAT</div>
+							<div class="pre-line kurungan-parents"></div>
+						</div>
+						
+						
+						<div class="c-utama">
+							<div class="dan1 ">&amp;</div>
+							<div class="nama-parents pre-line ">SALINAH BINTI OTHMAN</div>
+							<div class="pre-line kurungan-parents"></div>
+						</div>
+					</div>
+					
+					<div data-aos="zoom-in" class="aos-init">
+						
+						
+						
+					</div>
+					
+					<div data-aos="zoom-in" class="aos-init">
+						
+						
+						
+					</div>
+					
+					<div data-aos="zoom-in" class="aos-init">
+						
+						
+						
+					</div>
+					
+					
+					<div class="my-3 aos-init" data-aos="zoom-in">
+						<div class="text-break pre-line">Menjemput Yang Berbahagia Tan Sri/ Puan Sri/ Dato' Seri/ Datin Seri/ Dato’/ Datin/ Tuan/ Puan/ Encik/ Cik ke majlis perkahwinan anakanda kami</div>
+						
+						
+						<div class="nama-parents pre-line fw-bold my-3">NUR AZIZAH</div>
+						
+						<div class="text-break pre-line"></div>
+					</div>
+					
+					<div class="mt-4">
+						<div data-aos="zoom-in" class="aos-init">
+							<div class="rounded-3 nama-box border-dark border">
+								<div class="bg-nama  p-3">
+									<div class="">
+										<div class="nama-panjang pre-line ">Nur Azidah binti Abd Rashid</div>
+										<div class="dan2 ">&amp;</div>
+										<div class="nama-panjang pre-line ">Nor Azam bin Riduan</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div data-aos="zoom-in" class="aos-init">
+						<div class="mb-3 mt-4 rotate-180 pb-2">
+							<img class="w-50" src="./kad_items/image/kerawang_b_black.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="mt-4 px-3">
+				<div class="aos-init" data-aos="none">
+					<div data-aos="zoom-in" class="aos-init">
+						<div class="mt-3">
+							<svg class="icon">
+								<use xlink:href="/assets/icon/icon.svg#cal"></use>
+							</svg>
+							<div class="text-dark">
+								<div>Sabtu, 21 Disember 2024</div>
+								<div class="italic">4 Rabiulawwal 1446H</div>
+							</div>
+						</div>
+					</div>
+					
+					<div data-aos="zoom-in" class="aos-init">
+						<div class="mt-4">
+							<svg class="icon">
+								<use xlink:href="/assets/icon/icon.svg#jam"></use>
+							</svg>
+							<div class="text-dark">
+								<div>11:30 pagi - 4:30 petang</div>
+							</div>
+						</div>
+					</div>
+					
+					<div data-aos="zoom-in" class="aos-init">
+						<div class="mt-4 pt-2">
+							<svg class="icon">
+								<use xlink:href="/assets/icon/icon.svg#loc"></use>
+							</svg>
+							<div class="text-dark">
+								<div class="pre-line">Dewan Astaka
+								Kg. Paya, 35400 Batu Kurau, Perak</div>
+							</div>
+						</div>
+					</div>
+					
+					<div data-aos="zoom-in" class="aos-init">
+						<div class="coundown_container mt-3">
+							<div id="timer"><div>23<span>Hari</span></div><section>:<br><br></section><div>14<span>Jam</span></div><section>:<br><br></section><div>55<span>Minit</span></div><section>:<br><br></section><div>15<span>Saat</span></div></div>
+						</div>
+						
+						<script>
+							// COuntdown
+							function updateTimer() {
+								future = Date.parse("Saturday, 21 December 2024 11:30");
+								now = new Date();
+								diff = future - now;
+								
+								days = Math.floor(diff / (1000 * 60 * 60 * 24));
+								hours = Math.floor(diff / (1000 * 60 * 60));
+								mins = Math.floor(diff / (1000 * 60));
+								secs = Math.floor(diff / 1000);
+								
+								d = days;
+								h = hours - days * 24;
+								m = mins - hours * 60;
+								s = secs - mins * 60;
+								p = ':<br><br>';
+								
+								document.getElementById("timer")
+								.innerHTML =
+								'<div>' + d + '<span>Hari</span></div>' +
+								'<section>' + p + '</section>' +
+								'<div>' + h + '<span>Jam</span></div>' +
+								'<section>' + p + '</section>' +
+								'<div>' + m + '<span>Minit</span></div>' +
+								'<section>' + p + '</section>' +
+								'<div>' + s + '<span>Saat</span></div>';
+								// If the count down is over, write some text 
+								if (days < 0) {
+									Date();
+									document.getElementById("timer")
+									.innerHTML =
+									'<div>' + 0 + '<span>Hari</span></div>' +
+									'<section>' + p + '</section>' +
+									'<div>' + 0 + '<span>Jam</span></div>' +
+									'<section>' + p + '</section>' +
+									'<div>' + 0 + '<span>Minit</span></div>' +
+									'<section>' + p + '</section>' +
+									'<div>' + 0 + '<span>Saat</span></div>';
+								}
+								
+							}
+							
+							setInterval('updateTimer()', 1000);
+						</script>
+					</div>
+				</div>
+			</div>
+			
+			<div class="stick">
+				<div class="scrollbawah pos-bottom-luxury">
+					<div class="scrollbawah_text">scroll</div>
+					
+					<div class="scrollbawah_icon"><i class="bi bi-hand-index-thumb-fill"></i></div>
+				</div>
+				<audio controls="" loop="" id="lagus" hidden="">
+					<source src="https://gambar.ekad.in/lagu/L7.mp3#t=00:00:00" type="audio/mp3">
+				</audio>
+				<button class="play" id="toggle-icon">
+					<div class="laguu anim"><i class="lagu_icon bi bi-music-note-beamed"></i></div>
+				</button>
+				
+				<script src="./kad_items/js/lagu.js"></script>
+				<section class="nav_container" id="navbar">
+					<div class="p-2">
+						<div class="tabs3 text-bg-dark bg-gradient">
+							<div class="d-flex">
+								
+								
+								<a href="https://ekaddigital.com/kadkahwinkitaa/AG12631/--CIK-AZIZAH--" class="icon2">
+									<img src="./kad_items/image/arrows-rotate-solid-putih-1.svg"><br>Refresh
+								</a>
+								
+								
+								<a class="hidecalendar icon2" data-bs-toggle="offcanvas" data-bs-target="#kalendar">
+									<img src="./kad_items/image/navbar_kalendar.svg"><br>Kalendar
+								</a>
+								
+								<div class="offcanvas offcanvas-bottom" tabindex="-1" id="kalendar">
+									<div class="ekad-width">
+										<div class="position-relative px-4 py-2">
+											<h5 class="fw-bolder">Kalendar <i class="ti ti-calendar-month f-25"></i></h5>
+											<div class="text-end"><button type="button" class="btn position-absolute translate-middle close-canvas border-secondary-subtle rounded border bg-white shadow-sm" data-bs-dismiss="offcanvas"><i class="bi bi-caret-down-fill"></i></button></div>
+										</div>
+									</div>
+									
+									<div class="offcanvas-body bg-body-secondary p-4">
+										<div class="ekad-width">
+											<div class="text-center">
+												<div class="nota fw-bold pre-line mt-2 rounded px-4 pb-4 pt-0">
+													Simpan kalendar
+												</div>
+											</div>
+											
+											<div class="bg-light mt-3 rounded p-3 shadow">
+												<div class="mb-3">
+													<div class="tajuk-mini c-utama text-uppercase">~ Raikan Cinta ~</div>
+													<div>Sabtu, 21 Disember 2024</div>
+												</div>
+												
+												
+												<a href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=Raikan%20Cinta%20|%20Ummu%20Zahra%20%26%20Mifzal%20Haikal&amp;dates=20240908T113000/20240908T163000&amp;details=Kad+Undangan+Digital+%40+eKad+dari%3A%0A%0AKADKAHWINKITAA&amp;location=.&amp;trp=true&amp;sf=true&amp;output=xml#f" target="_blank">
+													<button class="butang blue mb-4">
+														<div class="py-3">
+															<i class="ti ti-brand-google-filled blue-icon position-absolute top-50 translate-middle-y f-25 start-6" style=""></i>
+															<div>Google Calendar</div>
+														</div>
+													</button>
+												</a>
+												
+												
+												<a href="https://ekaddigital.com/ics/kadkahwinkitaa/AG12631" target="_blank">
+													<button class="butang yellow mb-3">
+														<div class="py-3">
+															<i class="ti ti-brand-apple-filled yellow-icon position-absolute top-50 translate-middle-y f-25 start-6" style=""></i>
+															<div>Apple Calendar</div>
+														</div>
+													</button>
+												</a>
+											</div>
+											
+											<div class="mb-5"></div>
+											
+										</div>
+									</div>
+								</div>
+								
+								
+								
+								
+								
+								
+								<a class="icon2" data-bs-toggle="offcanvas" data-bs-target="#hubungi">
+									<img src="./kad_items/image/navbar_hubungi.svg"><br>Hubungi
+								</a>
+								
+								<div class="offcanvas offcanvas-bottom" tabindex="-1" id="hubungi">
+									<div class="ekad-width">
+										<div class="position-relative px-4 py-2">
+											<h5 class="fw-bolder">Hubungi <i class="ti ti-user f-25"></i></h5>
+											<div class="text-end"><button type="button" class="btn position-absolute translate-middle close-canvas border-secondary-subtle rounded border bg-white shadow-sm" data-bs-dismiss="offcanvas"><i class="bi bi-caret-down-fill"></i></button></div>
+										</div>
+									</div>
+									
+									<div class="offcanvas-body bg-body-secondary p-4">
+										<div class="ekad-width">
+											<div class="text-center">
+												
+												<div class="grid-container">
+													<div class="grid-item text-start">
+														Zaid
+														<div class="italic">
+															Abang Pengantin
+														</div>
+													</div>
+													<a href="tel:+0172878524" class="grid-item show_tel_1 text-end">
+														<img class="icon3" src="./kad_items/image/telephone-call.svg">
+													</a>
+													<a href="https://wa.me/0172878524" class="grid-item show_ws_1 text-end">
+														<img class="icon3" src="./kad_items/image/whatsapp.svg">
+													</a>
+												</div>
+												<div class="grid-container">
+													<div class="grid-item text-start">
+														Naim
+														<div class="italic">
+															Abang Pengantin
+														</div>
+													</div>
+													<a href="tel:+01136292917" class="grid-item show_tel_2 text-end">
+														<img class="icon3" src="./kad_items/image/telephone-call.svg">
+													</a>
+													<a href="https://wa.me/01136292917" class="grid-item show_ws_2 text-end">
+														<img class="icon3" src="./kad_items/image/whatsapp.svg">
+													</a>
+												</div>
+												<div class="grid-container">
+													<div class="grid-item text-start">
+														Siti
+														<div class="italic">
+															Kakak Pengantin
+														</div>
+													</div>
+													<a href="tel:+01156816165" class="grid-item show_tel_3 text-end">
+														<img class="icon3" src="./kad_items/image/telephone-call.svg">
+													</a>
+													<a href="https://wa.me/01156816165" class="grid-item show_ws_3 text-end">
+														<img class="icon3" src="./kad_items/image/whatsapp.svg">
+													</a>
+												</div>
+												<div class="grid-container">
+													<div class="grid-item text-start">
+														Nurul
+														<div class="italic">
+															Kakak Pengantin
+														</div>
+													</div>
+													<a href="tel:+0124713067" class="grid-item show_tel_4 text-end">
+														<img class="icon3" src="./kad_items/image/telephone-call.svg">
+													</a>
+													<a href="https://wa.me/0124713067" class="grid-item show_ws_4 text-end">
+														<img class="icon3" src="./kad_items/image/whatsapp.svg">
+													</a>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								
+								<a class="icon2" data-bs-toggle="offcanvas" data-bs-target="#lokasi">
+									<img src="./kad_items/image/navbar_lokasi.svg"><br>Lokasi
+								</a>
+								
+								<div class="offcanvas offcanvas-bottom" tabindex="-1" id="lokasi">
+									<div class="ekad-width">
+										<div class="position-relative px-4 py-2">
+											<h5 class="fw-bolder">Lokasi <i class="ti ti-map-2 f-25"></i></h5>
+											<div class="text-end"><button type="button" class="btn position-absolute translate-middle close-canvas border-secondary-subtle rounded border bg-white shadow-sm" data-bs-dismiss="offcanvas"><i class="bi bi-caret-down-fill"></i></button></div>
+										</div>
+									</div>
+									
+									<div class="offcanvas-body bg-body-secondary p-4">
+										<div class="ekad-width">
+											<div class="text-center">
+												
+												<div class="bg-light mt-3 rounded p-3 shadow">
+													<div class="mb-3">
+														<div class="tajuk-mini c-utama text-uppercase">~ Raikan Cinta ~</div>
+														<div>Sabtu, 21 Disember 2024</div>
+													</div>
+													
+													
+													
+													<a href="https://waze.com/ul/hw0zsmc3sm" target="_blank">
+														<button class="butang blue mb-4">
+															<div class="py-3">
+																<i class="ti ti-brand-waze blue-icon position-absolute top-50 translate-middle-y f-25 start-6" style=""></i>
+																<div>Waze</div>
+															</div>
+														</button>
+													</a>
+													
+													
+													<a href="https://maps.app.goo.gl/hiX2hJ9kHi8tx4TE6?g_st=ic" target="_blank">
+														<button class="butang green mb-4">
+															<div class="py-3">
+																<i class="ti ti-brand-google-maps green-icon position-absolute top-50 translate-middle-y f-25 start-6" style=""></i>
+																<div>Google Map</div>
+															</div>
+														</button>
+													</a>
+												</div>
+												
+												<div class="mb-5"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								
+								<a class="icon2" href="https://ekaddigital.com/kadkahwinkitaa/AG12631/--CIK-AZIZAH--#rsvp">
+									<img src="./kad_items/image/navbar_rsvp.svg"><br>Rsvp
+								</a>
+								
+								
+								
+								
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			
             
-        </div>
-        <div class="sliding-doors totheleft"></div>
-        <div class="sliding-doors totheright"></div>
-    </div>
-    </div>
-    <div id="inside"  class="ekad-width contain bg-white text-center">
-        <div id="bubble"><canvas data-generated="true" style="width: 100% !important; height: 100% !important; position: fixed !important; z-index: 1 !important; top: 0px !important; left: 0px !important; pointer-events: none;" aria-hidden="true" width="748" height="935"></canvas></div>
- 
-
-
-        <div class="">
-            <div class="position-relative cover-box">
-                <img class=" filter" src="./kad_items/image/.jpg" alt="" width="100%" height="auto">
-                
-                <!-- SEPERATOR -->
-                <div class="custom-shape-divider-bottom-1683647660">
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                    </svg>
-                </div>
-                <div class="custom-shape-divider-bottom-dua">
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                    </svg>
-                </div>
-                <!-- SEPERATOR -->
-            </div>
-            
-        </div>
-
-
-
-
-                
-        <div class="mt-4 px-3 aos-init" data-aos="none">
-            <div class="">
-                <div class="mb-4 mt-3 aos-init" data-aos="zoom-in">
-                    <img class="w-75" src="./kad_items/image/bismillah_a_black.svg" alt="">
-                </div>
-                
-                <div class="mb-4 mt-3 aos-init" data-aos="zoom-in">
-                    <img class="w-50" src="./kad_items/image/kerawang_b_black.svg" alt="">
-                </div>
-                
-                
-                <div class="mb-3 aos-init" data-aos="zoom-in">
-                    <div class="text-break pre-line">Dengan penuh kesyukuran, kami</div>
-                </div>
-                
-                
-                <div data-aos="zoom-in" class="aos-init">
-                    
-                    <div class="c-utama">
-                        <div class="nama-parents pre-line ">ABD RASHID BIN SELAMAT</div>
-                        <div class="pre-line kurungan-parents"></div>
-                    </div>
-                    
-                    
-                    <div class="c-utama">
-                        <div class="dan1 ">&amp;</div>
-                        <div class="nama-parents pre-line ">SALINAH BINTI OTHMAN</div>
-                        <div class="pre-line kurungan-parents"></div>
-                    </div>
-                </div>
-                
-                <div data-aos="zoom-in" class="aos-init">
-                    
-                    
-                    
-                </div>
-                
-                <div data-aos="zoom-in" class="aos-init">
-                    
-                    
-                    
-                </div>
-                
-                <div data-aos="zoom-in" class="aos-init">
-                    
-                    
-                    
-                </div>
-                
-                
-                <div class="my-3 aos-init" data-aos="zoom-in">
-                    <div class="text-break pre-line">Menjemput Yang Berbahagia Tan Sri/ Puan Sri/ Dato' Seri/ Datin Seri/ Dato’/ Datin/ Tuan/ Puan/ Encik/ Cik ke majlis perkahwinan anakanda kami</div>
-                    
-                    
-                    <div class="nama-parents pre-line fw-bold my-3">NUR AZIZAH</div>
-                    
-                    <div class="text-break pre-line"></div>
-                </div>
-                
-                <div class="mt-4">
-                    <div data-aos="zoom-in" class="aos-init">
-                        <div class="rounded-3 nama-box border-dark border">
-                            <div class="bg-nama  p-3">
-                                <div class="">
-                                    <div class="nama-panjang pre-line ">Nur Azidah binti Abd Rashid</div>
-                                    <div class="dan2 ">&amp;</div>
-                                    <div class="nama-panjang pre-line ">Nor Azam bin Riduan</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div data-aos="zoom-in" class="aos-init">
-                    <div class="mb-3 mt-4 rotate-180 pb-2">
-                        <img class="w-50" src="./kad_items/image/kerawang_b_black.svg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="stick">
-            <div class="scrollbawah pos-bottom-luxury">
-                <div class="scrollbawah_text">scroll</div>
-                
-                <div class="scrollbawah_icon"><i class="bi bi-hand-index-thumb-fill"></i></div>
-            </div>
-            <audio controls="" loop="" id="lagus" hidden="">
-                <source src="https://gambar.ekad.in/lagu/L7.mp3#t=00:00:00" type="audio/mp3">
-            </audio>
-            <button class="play" id="toggle-icon">
-                <div class="laguu anim"><i class="lagu_icon bi bi-music-note-beamed"></i></div>
-            </button>
-            
-            <script src="./kad_items/js/lagu.js.download"></script>
-            <section class="nav_container" id="navbar">
-                <div class="p-2">
-                    <div class="tabs3 text-bg-dark bg-gradient">
-                        <div class="d-flex">
-                            
-                            
-                            <a href="https://ekaddigital.com/kadkahwinkitaa/AG12631/--CIK-AZIZAH--" class="icon2">
-                                <img src="./kad_items/image/arrows-rotate-solid-putih-1.svg"><br>Refresh
-                            </a>
-                            
-                            
-                            <a class="hidecalendar icon2" data-bs-toggle="offcanvas" data-bs-target="#kalendar">
-                                <img src="./kad_items/image/navbar_kalendar.svg"><br>Kalendar
-                            </a>
-                            
-                            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="kalendar">
-                                <div class="ekad-width">
-                                    <div class="position-relative px-4 py-2">
-                                        <h5 class="fw-bolder">Kalendar <i class="ti ti-calendar-month f-25"></i></h5>
-                                        <div class="text-end"><button type="button" class="btn position-absolute translate-middle close-canvas border-secondary-subtle rounded border bg-white shadow-sm" data-bs-dismiss="offcanvas"><i class="bi bi-caret-down-fill"></i></button></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="offcanvas-body bg-body-secondary p-4">
-                                    <div class="ekad-width">
-                                        <div class="text-center">
-                                            <div class="nota fw-bold pre-line mt-2 rounded px-4 pb-4 pt-0">
-                                                Simpan kalendar
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="bg-light mt-3 rounded p-3 shadow">
-                                            <div class="mb-3">
-                                                <div class="tajuk-mini c-utama text-uppercase">~ Raikan Cinta ~</div>
-                                                <div>Sabtu, 21 Disember 2024</div>
-                                            </div>
-                                            
-                                            
-                                            <a href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=Raikan%20Cinta%20|%20Ummu%20Zahra%20%26%20Mifzal%20Haikal&amp;dates=20240908T113000/20240908T163000&amp;details=Kad+Undangan+Digital+%40+eKad+dari%3A%0A%0AKADKAHWINKITAA&amp;location=.&amp;trp=true&amp;sf=true&amp;output=xml#f" target="_blank">
-                                                <button class="butang blue mb-4">
-                                                    <div class="py-3">
-                                                        <i class="ti ti-brand-google-filled blue-icon position-absolute top-50 translate-middle-y f-25 start-6" style=""></i>
-                                                        <div>Google Calendar</div>
-                                                    </div>
-                                                </button>
-                                            </a>
-                                            
-                                            
-                                            <a href="https://ekaddigital.com/ics/kadkahwinkitaa/AG12631" target="_blank">
-                                                <button class="butang yellow mb-3">
-                                                    <div class="py-3">
-                                                        <i class="ti ti-brand-apple-filled yellow-icon position-absolute top-50 translate-middle-y f-25 start-6" style=""></i>
-                                                        <div>Apple Calendar</div>
-                                                    </div>
-                                                </button>
-                                            </a>
-                                        </div>
-                                        
-                                        <div class="mb-5"></div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                            
-                            
-                            
-                            
-                            <a class="icon2" data-bs-toggle="offcanvas" data-bs-target="#hubungi">
-                                <img src="./kad_items/image/navbar_hubungi.svg"><br>Hubungi
-                            </a>
-                            
-                            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="hubungi">
-                                <div class="ekad-width">
-                                    <div class="position-relative px-4 py-2">
-                                        <h5 class="fw-bolder">Hubungi <i class="ti ti-user f-25"></i></h5>
-                                        <div class="text-end"><button type="button" class="btn position-absolute translate-middle close-canvas border-secondary-subtle rounded border bg-white shadow-sm" data-bs-dismiss="offcanvas"><i class="bi bi-caret-down-fill"></i></button></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="offcanvas-body bg-body-secondary p-4">
-                                    <div class="ekad-width">
-                                        <div class="text-center">
-                                            
-                                            <div class="grid-container">
-                                                <div class="grid-item text-start">
-                                                    Zaid
-                                                    <div class="italic">
-                                                        Abang Pengantin
-                                                    </div>
-                                                </div>
-                                                <a href="tel:+0172878524" class="grid-item show_tel_1 text-end">
-                                                    <img class="icon3" src="./kad_items/image/telephone-call.svg">
-                                                </a>
-                                                <a href="https://wa.me/0172878524" class="grid-item show_ws_1 text-end">
-                                                    <img class="icon3" src="./kad_items/image/whatsapp.svg">
-                                                </a>
-                                            </div>
-                                            <div class="grid-container">
-                                                <div class="grid-item text-start">
-                                                    Naim
-                                                    <div class="italic">
-                                                        Abang Pengantin
-                                                    </div>
-                                                </div>
-                                                <a href="tel:+01136292917" class="grid-item show_tel_2 text-end">
-                                                    <img class="icon3" src="./kad_items/image/telephone-call.svg">
-                                                </a>
-                                                <a href="https://wa.me/01136292917" class="grid-item show_ws_2 text-end">
-                                                    <img class="icon3" src="./kad_items/image/whatsapp.svg">
-                                                </a>
-                                            </div>
-                                            <div class="grid-container">
-                                                <div class="grid-item text-start">
-                                                    Siti
-                                                    <div class="italic">
-                                                        Kakak Pengantin
-                                                    </div>
-                                                </div>
-                                                <a href="tel:+01156816165" class="grid-item show_tel_3 text-end">
-                                                    <img class="icon3" src="./kad_items/image/telephone-call.svg">
-                                                </a>
-                                                <a href="https://wa.me/01156816165" class="grid-item show_ws_3 text-end">
-                                                    <img class="icon3" src="./kad_items/image/whatsapp.svg">
-                                                </a>
-                                            </div>
-                                            <div class="grid-container">
-                                                <div class="grid-item text-start">
-                                                    Nurul
-                                                    <div class="italic">
-                                                        Kakak Pengantin
-                                                    </div>
-                                                </div>
-                                                <a href="tel:+0124713067" class="grid-item show_tel_4 text-end">
-                                                    <img class="icon3" src="./kad_items/image/telephone-call.svg">
-                                                </a>
-                                                <a href="https://wa.me/0124713067" class="grid-item show_ws_4 text-end">
-                                                    <img class="icon3" src="./kad_items/image/whatsapp.svg">
-                                                </a>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                            <a class="icon2" data-bs-toggle="offcanvas" data-bs-target="#lokasi">
-                                <img src="./kad_items/image/navbar_lokasi.svg"><br>Lokasi
-                            </a>
-                            
-                            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="lokasi">
-                                <div class="ekad-width">
-                                    <div class="position-relative px-4 py-2">
-                                        <h5 class="fw-bolder">Lokasi <i class="ti ti-map-2 f-25"></i></h5>
-                                        <div class="text-end"><button type="button" class="btn position-absolute translate-middle close-canvas border-secondary-subtle rounded border bg-white shadow-sm" data-bs-dismiss="offcanvas"><i class="bi bi-caret-down-fill"></i></button></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="offcanvas-body bg-body-secondary p-4">
-                                    <div class="ekad-width">
-                                        <div class="text-center">
-                                            
-                                            <div class="bg-light mt-3 rounded p-3 shadow">
-                                                <div class="mb-3">
-                                                    <div class="tajuk-mini c-utama text-uppercase">~ Raikan Cinta ~</div>
-                                                    <div>Sabtu, 21 Disember 2024</div>
-                                                </div>
-                                                
-                                                
-                                                
-                                                <a href="https://waze.com/ul/hw0zsmc3sm" target="_blank">
-                                                    <button class="butang blue mb-4">
-                                                        <div class="py-3">
-                                                            <i class="ti ti-brand-waze blue-icon position-absolute top-50 translate-middle-y f-25 start-6" style=""></i>
-                                                            <div>Waze</div>
-                                                        </div>
-                                                    </button>
-                                                </a>
-                                                
-                                                
-                                                <a href="https://maps.app.goo.gl/hiX2hJ9kHi8tx4TE6?g_st=ic" target="_blank">
-                                                    <button class="butang green mb-4">
-                                                        <div class="py-3">
-                                                            <i class="ti ti-brand-google-maps green-icon position-absolute top-50 translate-middle-y f-25 start-6" style=""></i>
-                                                            <div>Google Map</div>
-                                                        </div>
-                                                    </button>
-                                                </a>
-                                            </div>
-                                            
-                                            <div class="mb-5"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                            <a class="icon2" href="https://ekaddigital.com/kadkahwinkitaa/AG12631/--CIK-AZIZAH--#rsvp">
-                                <img src="./kad_items/image/navbar_rsvp.svg"><br>Rsvp
-                            </a>
-                            
-                            
-                            
-                            
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-            <h1>Form 1</h1>
-            <form id="speechForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <br><br>
-                <label for="text">To Write:</label>
-                <textarea id="text" name="text" rows="10" cols="30" required></textarea>
-                <br><br>
-                <button type="button" onclick="submitSpeech()">Submit</button>
-            </form>
-        
-            <h2>List of Form</h2>
-            <div id="speechList"></div>
-        
-            <h1>Form 2</h1>
-            <form id="rsvpForm">
-                <label for="rsvpName">Name:</label>
-                <input type="text" id="rsvpName" name="rsvpName" required>
-                <br><br>
-                <label for="rsvpCount">Number of People:</label>
-                <input type="number" id="rsvpCount" name="rsvpCount" min="1" required>
-                <br><br>
-                <button type="button" onclick="submitRSVP()">Submit</button>
-            </form>
-        
-            <h2>Form List</h2>
-            <div id="rsvpList"></div>
-        
-
-
-
-
-        <button onclick="close_card()">Click to close</button>
-      
-    </div>
-
-
-    <script src="./js/app.js?v=002"></script>
-    <script src='./js/jquery-3.2.1.min.js' type="text/javascript"></script>
-    <script src='./js/aos.min.js' type="text/javascript"></script>
-
-    <script src="./kad_items/js/animate-on-scroll.js.download"></script>
-    <script src="./kad_items/js/sweetalert2.js.download"></script>
-    
-  
-
-
-
-<script>
-var $window = $(window);
-
-//Fading Out Loader
-$window.on("load", function() {
-    $(".pre-loader").fadeOut("slow");
-    AOS.refresh();
-});
-</script>
-    <script>
-document.querySelector('.enter-btn').addEventListener('click', function() {
-    const doors = document.querySelectorAll('.sliding-doors');
-    const bodySliding = document.getElementById('bodySliding');
-    const EntbuttonClick = document.querySelector('.enter-btn');
-    
-    // Trigger sliding doors and fade effect
-    doors.forEach(door => {
-        door.classList.toggle('open');
-    });
-
-    // Add the fade class after a slight delay
-    setTimeout(() => {
-        bodySliding.classList.toggle('fade');
-        EntbuttonClick.classList.toggle('fade');
-    }, 100); // Adjust delay if needed
-
-    // Set display: none after the fade transition completes
-    setTimeout(() => {
-        bodySliding.style.display = 'none';
-        EntbuttonClick.style.display = 'none';
-    }, 2050); // 1 second for the transition + 100ms delay
-});
-
-
-
-    </script>   
-    
-    
-
-
-</body>
+			
+			
+			
+			
+			
+			
+			
+		</div>
+		
+		<script type="text/javascript" src="./kad_items/js/lagu.js"></script>
+		<script type="text/javascript" src="./js/app.js?v=002"></script>
+		<script type="text/javascript" src='./js/jquery-3.2.1.min.js' type="text/javascript"></script>
+		<script type="text/javascript" src='./js/aos.min.js' type="text/javascript"></script>
+		
+		<script type="text/javascript" src="./kad_items/js/animate-on-scroll.js"></script>
+		<script  type="text/javascript" src="./kad_items/js/sweetalert2.js"></script>
+		
+		
+		<script type="text/javascript" src="./kad_items/js/tsparticles.bundle.min.js"></script>
+		
+		
+		<script>
+			var $window = $(window);
+			
+			//Fading Out Loader
+			$window.on("load", function() {
+				$(".pre-loader").fadeOut("slow");
+				AOS.refresh();
+			});
+		</script>
+		<script>
+			document.querySelector('.enter-btn').addEventListener('click', function() {
+				const doors = document.querySelectorAll('.sliding-doors');
+				const bodySliding = document.getElementById('bodySliding');
+				const EntbuttonClick = document.querySelector('.enter-btn');
+				
+				// Trigger sliding doors and fade effect
+				doors.forEach(door => {
+					door.classList.toggle('open');
+				});
+				
+				// Add the fade class after a slight delay
+				setTimeout(() => {
+					bodySliding.classList.toggle('fade');
+					EntbuttonClick.classList.toggle('fade');
+				}, 100); // Adjust delay if needed
+				
+				// Set display: none after the fade transition completes
+				setTimeout(() => {
+					bodySliding.style.display = 'none';
+					EntbuttonClick.style.display = 'none';
+				}, 2050); // 1 second for the transition + 100ms delay
+			});
+			
+			
+			
+		</script>   
+		
+		
+		
+		
+	</body>
 </html>
 
 
 
-  
