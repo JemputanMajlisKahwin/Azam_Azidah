@@ -1,6 +1,6 @@
 body {
 
-  max-width: 999px;
+  /* max-width: 999px; */
   
   position: relative;
   
@@ -8,7 +8,7 @@ body {
   
   margin: 0 auto;
   
-  height: 100vh;
+  /* height: 100vh; */
   
   line-height: normal;
   }
