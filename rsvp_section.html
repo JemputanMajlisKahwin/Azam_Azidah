@@ -1,0 +1,350 @@
+<div class="mt-5 px-3" id="rsvp">
+    <div class="aos-init" data-aos="none">
+        <div class="c-utama mt-3 aos-init" data-aos="zoom-in">
+            <div class="text-break pre-line text-uppercase tajuk-section">Maklumat Kehadiran</div>
+        </div>
+        
+        <div class="mt-4">
+            
+
+
+
+            <div class="mt-4">
+                <div data-aos="zoom-in" class="aos-init">
+                    <div class="kotak-guestbook center mt-4">
+                        <div id="attendeesList" class="guestbook_chat p-3">
+                        
+                        </div>
+                        
+                        <div class="guestbook_chat hidekomen p-3" style="/*display: none;*/">
+                            <div class="c-utama">Kehadiran</div>
+                            <div class="text_tulisan">Senarai anda disini<br>😊 😊</div>
+                        </div>
+                    </div>
+                </div>
+                
+            
+            </div>
+
+            <div data-aos="zoom-in" class="aos-init">
+                <div class="alert alert-danger fw-bold pre-line">Sila maklumkan kehadiran yang telah ditetapkan melalui butang RSVP di bawah
+                </div>
+            </div>
+            
+            <div data-aos="zoom-in" class="aos-init">
+                <button data-bs-toggle="offcanvas" data-bs-target="#rsvp_majlis_1" class="butang black rounded-pill mb-4 px-5 py-3">
+                    <img src="./kad_items/image/user-check.svg" alt="icon message" height="30px" style="display: block;margin: 2px auto;">
+                    RSVP
+                </button>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="rsvp_majlis_1">
+        <div class="ekad-width">
+            <div class="position-relative px-4 py-2">
+                <h5 class="fw-bolder">RSVP <i class="ti ti-mail-check f-25"></i></h5>
+                <div class="text-uppercase">Raikan Cinta</div>
+                <div>Sabtu, 21 Disember 2024</div>
+                <div class="text-end"><button type="button" class="btn position-absolute translate-middle close-canvas border-secondary-subtle rounded border bg-white shadow-sm" data-bs-dismiss="offcanvas"><i class="bi bi-caret-down-fill"></i></button></div>
+            </div>
+        </div>
+        
+        <div class="offcanvas-body bg-body-secondary">
+            <div class="ekad-width px-4 py-2">
+                <section id="formfull" class="mb-5" style="display: none">
+                    <div class="alert alert-danger">
+                        <i class="bi bi-exclamation-triangle" style="font-size: 40px"></i><br>
+                        Maaf. Kapasiti sudah penuh. Rsvp ditutup
+                    </div>
+                </section>
+                
+                <section id="formfinish" class="mb-5" style="display: none">
+                    <div id="formfinish_contain"></div>
+                </section>
+                
+                <div id="form">
+                    <div class="">
+                    </div>
+                    
+                    <section class="mb-3 mt-2 text-start">
+                        <span><i class="bi bi-person-fill-check"></i></span> <span class="label-kehadiran-title">Kehadiran</span>
+                        
+                        <button class="btn btn-outline-success rounded-pill w-100 fw-bold mt-2" data-bs-target="#rsvp_majlis_1_hadir" data-bs-toggle="offcanvas"><i class="bi bi-check-circle-fill"></i> <span class="label-kehadiran-hadir">Hadir</span></button>
+                        <button class="btn btn-outline-danger rounded-pill w-100 fw-bold mt-2" data-bs-target="#rsvp_majlis_1_tidak" data-bs-toggle="offcanvas"><i class="bi bi-x-circle-fill"></i> <span class="label-kehadiran-tidak">Tidak</span></button>
+                    </section>
+                    
+                    <div class="mb-5">
+                        <div class="alert alert-success text-center"><i class="bi bi-exclamation-triangle-fill"></i><br>
+                            <span class="label-kehadiran-note">Sila pilih "Kehadiran" di atas untuk isi maklumat seterusnya</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="rsvp_majlis_1_hadir">
+        <div class="ekad-width">
+            <div class="position-relative px-4 py-2">
+                <div class="fw-bolder text-success"><span class="label-kehadiran-hadir h5">Hadir</span> <i class="bi bi-check-circle-fill f-25"></i></div>
+                <div class="label-tarikh-majlis-1 mb-2">Sabtu, 21 Disember 2024</div>
+                <div class="text-end"><button type="button" class="btn position-absolute translate-middle close-canvas border-secondary-subtle finish-hadir rounded border bg-white shadow-sm" data-bs-target="#rsvp_majlis_1" data-bs-toggle="offcanvas"><i class="bi bi-caret-down-fill"></i></button></div>
+            </div>
+        </div>
+        <div class="offcanvas-body bg-body-secondary p-4">
+            <div class="ekad-width">
+                
+                
+                <form id="rsvpForm" method="POST" novalidate="">
+                    <input type="hidden" name="_token" value="spSYjGEwo2jsVH3BHlskRg04emHt3I995wJzlNSU" autocomplete="off">
+                    
+                    <section class="mb-4 mt-2">
+                        
+                        <section class="mb-2">
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
+                                <div class="form-floating">
+                                    <input type="text" class="form-control fw-bolder rsvp1_nama_jenis2 carut" id="rsvp1_nama_jenis2" name="nama[]" placeholder="&lt;span class=&#39;label-nama&#39;&gt;&lt;/span&gt;" autocomplete="off" required="">
+                                    <label for="rsvp1_nama_jenis2">
+                                        <span class="label-nama">Nama</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="invalid-feedback f-12 text-start"><span class="label-wajib-ruangan-wajib f-14">Ruangan Wajib</span></div>
+                        </section>
+                        
+                        <div class="row g-0">
+                            <div class="col-6">
+                                <section class="">
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-plus-circle"></i></span>
+                                        <div class="form-floating">
+                                            <input type="number" class="form-control fw-bolder rsvp1_pax_jenis2 carut" id="rsvp1_pax_jenis2" name="jumlah" placeholder="" autocomplete="off" inputmode="numeric" required="">
+                                            <label for="rsvp1_pax_jenis2">
+                                                <span class="label-jumlah-title">Jumlah Pax</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="invalid-feedback f-12 text-start"><span class="label-wajib-ruangan-wajib f-14">Ruangan Wajib</span></div>
+                                    <div class="label_jumlah_pax_desc mt-2 text-start italic">Jumlah termasuk anda</div>
+                                </section>
+                            </div>
+                        </div>
+                        
+                    </section>
+                    
+                    
+                    <div class="text-start">
+                        
+                        <div hidden="">
+                            <input type="text" class="rsvp1_hubungan carut" name="rsvp1_hubungan" value="-"><option value="" disabled="" selected="">-</option><option value="Keluarga Pengantin Perempuan">Keluarga Pengantin Perempuan</option><option value="Keluarga Pengantin Lelaki">Keluarga Pengantin Lelaki</option><option value="Rakan Pengantin Perempuan">Rakan Pengantin Perempuan</option><option value="Rakan Pengantin Lelaki">Rakan Pengantin Lelaki</option></input>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    
+                    <section class="mt-5">
+                        <input type="radio" name="sesi_majlis_1" value="1" checked="" style="display: none">
+                        
+                    </section>
+                    
+                    
+    
+                    
+                    
+                    <div hidden="">
+                        <input type="text" name="orderid" value="AG12631" readonly="">
+                        <input type="text" name="kehadiran" class="value-kehadiran-hadir" value="" readonly="">
+                        <input type="text" name="tarikh_majlis_rsvp_1" class="value-tarikh-majlis-1" value="" readonly="">
+                        <input type="text" name="majlis" value="1" readonly="">
+                        <input type="text" name="nama_majlis" class="nama_majlis" id="nama_majlis" autocomplete="off" value="Raikan Cinta | Azam &amp; Azidah" readonly="">
+                        <input type="text" name="url_ekad" class="url_ekad" id="url_ekad" autocomplete="off" value="" readonly=""> 
+                        <input type="text" name="masa_sesi_input1" class="value-masa-fullday-majlis-1" value="" id="masa1" readonly="">
+                        
+                        
+                        <input type="text" name="ip_address" value="60.50.206.146" readonly="">
+                    </div>
+                    
+                    
+                    <section class="mt-4 px-1">
+                        <button type="submit" class="butang blue rsvp_1_hadir_save py-3" name="submit" onclick="submitRSVP()">
+                            <i class="ti ti-brand-telegram blue-icon position-absolute top-50 translate-middle-y f-25 c-blue start-4" style=""></i>
+                            <span class="label-btn-hantar">Hantar</span>
+                        </button>
+                    </section>
+                </form>
+                
+                
+                <section class="mb-5 mt-4">
+                    <a class="pointer btn btn-outline-secondary rounded-pill fw-bold pb-2" data-bs-target="#rsvp_majlis_1" data-bs-toggle="offcanvas"><i class="bi bi-x-circle-fill"></i> <span class="label-btn-batal">Batal</span></a>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="rsvp_majlis_1_tidak">
+        <div class="ekad-width">
+            <div class="position-relative px-4 py-2">
+                <h5 class="fw-bolder text-danger"><span class="label-kehadiran-tidak h5">Tidak</span> <i class="bi bi-x-circle-fill f-25"></i></h5>
+                <div class="label-tarikh-majlis-1 mb-2">Sabtu, 21 Disember 2024</div>
+                <div class="text-end"><button type="button" class="btn position-absolute translate-middle close-canvas border-secondary-subtle finish-tidak rounded border bg-white shadow-sm" data-bs-target="#rsvp_majlis_1" data-bs-toggle="offcanvas"><i class="bi bi-caret-down-fill"></i></button></div>
+            </div>
+        </div>
+        
+        <div class="offcanvas-body bg-body-secondary p-4">
+            <div class="ekad-width">
+                
+                <form id="rsvpForm"  method="POST" novalidate="">
+                    <input type="hidden" name="_token" value="spSYjGEwo2jsVH3BHlskRg04emHt3I995wJzlNSU" autocomplete="off">
+                    
+                    <section class="mb-4 mt-2">
+                        
+                        <div id="nama-container">
+                            <section class="mb-2">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control fw-bolder rsvp1_nama2 carut" id="rsvp1_nama" name="nama[]" placeholder="&lt;span class=&#39;label-nama&#39;&gt;&lt;/span&gt;" autocomplete="off" required="">
+                                        <label for="rsvp1_nama2">
+                                            <span class="label-nama">Nama</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="invalid-feedback f-12 text-start"><span class="label-wajib-ruangan-wajib f-14">Ruangan Wajib</span></div>
+                            </section>
+                        </div>
+                    </section>
+                    
+                    
+                    <div class="text-start">
+                        
+                        <div hidden="">
+                            <input type="text" class="rsvp1_hubungan carut" name="rsvp1_hubungan" value="-"><option value="" disabled="" selected="">-</option><option value="Keluarga Pengantin Perempuan">Keluarga Pengantin Perempuan</option><option value="Keluarga Pengantin Lelaki">Keluarga Pengantin Lelaki</option><option value="Rakan Pengantin Perempuan">Rakan Pengantin Perempuan</option><option value="Rakan Pengantin Lelaki">Rakan Pengantin Lelaki</option></input>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                    
+                    
+                    
+                    </section>
+                    
+                    
+                    <div hidden="">
+                        <input type="text" name="orderid" value="AG12631" readonly="">
+                        <input type="text" name="kehadiran" class="value-kehadiran-tidak" value="" readonly="">
+                        <input type="text" name="tarikh_majlis_rsvp_1" class="value-tarikh-majlis-1" value="" readonly="">
+                        <input type="text" name="majlis" value="1" readonly="">
+                        <input type="text" name="nama_majlis" class="nama_majlis" id="nama_majlis" autocomplete="off" value="Raikan Cinta | Azam &amp; Azidah" readonly="">
+                        <input type="text" name="url_ekad" class="url_ekad" id="url_ekad" autocomplete="off" value="" readonly=""> 
+                        <input type="text" name="ip_address" value="60.50.206.146" readonly="">
+                    </div>
+                    
+                    
+                    <section class="mt-4 px-1">
+                        <button type="submit" class="butang blue rsvp_1_tidak_save py-3" name="submit" onclick="submitRSVP()">
+                            <i class="ti ti-brand-telegram blue-icon position-absolute top-50 translate-middle-y f-25 c-blue start-4" style=""></i>
+                            <span class="label-btn-hantar">Hantar</span>
+                        </button>
+                    </section>
+                </form>
+                
+                
+                <section class="mb-5 mt-4">
+                    <a class="pointer btn btn-outline-secondary rounded-pill fw-bold pb-2" data-bs-target="#rsvp_majlis_1" data-bs-toggle="offcanvas"><i class="bi bi-x-circle-fill"></i> <span class="label-btn-batal">Batal</span></a>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+    
+<script>
+// Function to submit the RSVP form
+function submitRSVP(formId) {
+    const form = document.getElementById(formId);
+    const nameInputs = form.querySelectorAll('input[name="nama[]"]');
+    const countInput = form.querySelector('input[name="jumlah"]');
+
+    let names = [];
+    nameInputs.forEach(input => {
+        if (input.value.trim()) {
+            names.push(input.value.trim());
+        }
+    });
+
+    const count = countInput ? parseInt(countInput.value) : 0;
+
+    if (names.length > 0 && count > 0) {
+        // Add RSVP to Firestore
+        db.collection('rsvps').add({
+            names: names,
+            count: count,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp()
+        }).then(() => {
+            // Clear the form
+            form.reset();
+            // Close the offcanvas
+            const offcanvas = new bootstrap.Offcanvas(document.getElementById(form.closest('.offcanvas').id));
+            offcanvas.hide();
+        }).catch((error) => {
+            console.error("Error adding RSVP: ", error);
+        });
+    } else {
+        alert('Please fill out all required fields.');
+    }
+}
+
+// Function to display the list of RSVPs
+function displayRSVPs() {
+    const rsvpList = document.getElementById('attendeesList');
+    rsvpList.innerHTML = ''; // Clear the list before updating
+
+    db.collection('rsvps').orderBy('timestamp', 'desc').onSnapshot((querySnapshot) => {
+        rsvpList.innerHTML = ''; // Clear the list before updating
+        querySnapshot.forEach((doc) => {
+            const rsvp = doc.data();
+            const rsvpItem = document.createElement('div');
+            rsvpItem.classList.add('rsvp-item', 'my-3', 'p-3', 'border', 'rounded');
+            rsvpItem.innerHTML = `<strong>${rsvp.names.join(', ')}:</strong> <p>Number of People: ${rsvp.count}</p>`;
+            rsvpList.appendChild(rsvpItem);
+        });
+    });
+}
+
+// Load RSVPs on page load
+document.addEventListener('DOMContentLoaded', () => {
+    displayRSVPs();
+    
+    // Attach submit event listeners to forms
+    const hadirForm = document.getElementById('rsvpFormHadir');
+    const tidakForm = document.getElementById('rsvpFormTidak');
+
+    if (hadirForm) {
+        hadirForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            submitRSVP('rsvpFormHadir');
+        });
+    }
+
+    if (tidakForm) {
+        tidakForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            submitRSVP('rsvpFormTidak');
+        });
+    }
+});
+</script>
+
+
+</script>

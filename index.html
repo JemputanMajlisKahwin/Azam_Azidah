@@ -143,7 +143,12 @@
 		<script src="./kad_items/js/app.js"></script>
 		<div  class="ekad-width contain bg-white text-center">
 			<div id="bubble"><canvas data-generated="false" style="width: 100% !important; height: 100% !important; position: fixed !important; z-index: 1 !important; top: 0px !important; left: 0px !important; pointer-events: none;" aria-hidden="true" width="728" height="1457"></canvas></div>
-			
+			<div id="loading-screen" style="display: none">
+				<div class="bg-dark position-absolute start-50 top-50 translate-middle rounded p-3 text-white">
+					<div class="spinner-border" role="status"></div>
+					<div class="mt-2">Sila Tunggu. Sedang Dihantar...</div>
+				</div>
+			</div>
 			
 			<div class="">
 				<div class="position-relative cover-box">
@@ -587,38 +592,7 @@
 								</section>
 								
 								
-								<section class="mb-4 mt-5">
-									<div class="bg-secondary-subtle border-secondary-subtle rounded border p-3">
-										<div class="text-center">
-											<div class="label-tel-email-note">Ruangan di bawah adalah tidak wajib. Tapi akan membantu memudahkan urusan pengerusi majlis.</div>
-										</div>
-										
-										
-										<section class="mt-4">
-											<div class="input-group">
-												<span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
-												<div class="form-floating">
-													<div class="iti iti--allow-dropdown iti--show-flags"><div class="iti__country-container"><button type="button" class="iti__selected-country" aria-expanded="false" aria-label="Selected country" aria-haspopup="true" aria-controls="iti-1__dropdown-content" role="combobox" title="Malaysia: +60"><div class="iti__selected-country-primary"><div class="iti__flag iti__my"><span class="iti__a11y-text">Malaysia +60</span></div><div class="iti__arrow" aria-hidden="true"></div></div></button></div><input type="tel" class="form-control fw-bolder whatsapp_tetamu carut iti__tel-input" id="whatsapp_tetamu" name="whatsapp_tetamu" autocomplete="off" data-intl-tel-input-id="1" placeholder="012-345 6789"></div>
-												</div>
-											</div>
-											<div id="error-msg" class="hide label-tel-email-error-tel f-12 text-danger text-start">Tidak Sah</div>
-											<div class="invalid-feedback text-start"><span class="label-wajib-ruangan-wajib f-14">Ruangan Wajib</span></div>
-										</section>
-										
-										
-										<section class="mt-4">
-											<div class="input-group">
-												<span class="input-group-text"><i class="bi bi-envelope"></i></span>
-												<div class="form-floating">
-													<input type="email" class="form-control fw-bolder email_tetamu carut" id="email_tetamu" name="email_tetamu" placeholder="&lt;span class=&#39;label-tel-email-email&#39;&gt;&lt;/span&gt;">
-													<label for="email_tetamu"><span class="label-tel-email-email">E-mel</span></label>
-												</div>
-											</div>
-											
-											<div class="invalid-feedback text-start"><span class="label-wajib-ruangan-wajib f-14">Ruangan Wajib</span></div>
-										</section>
-									</div>
-								</section>
+				
 								
 								
 								<div hidden="">
@@ -636,7 +610,7 @@
 								
 								
 								<section class="mt-4 px-1">
-									<button type="submit" class="butang blue rsvp_1_hadir_save py-3" name="submit">
+									<button type="submit" class="butang blue rsvp_1_hadir_save py-3" name="submit" onclick="submitRSVP()">
 										<i class="ti ti-brand-telegram blue-icon position-absolute top-50 translate-middle-y f-25 c-blue start-4" style=""></i>
 										<span class="label-btn-hantar">Hantar</span>
 									</button>
@@ -697,36 +671,7 @@
 								</div>
 								
 								
-								<section class="mb-4 mt-5">
-									<div class="bg-secondary-subtle border-secondary-subtle rounded border p-3">
-										<div class="text-center">
-											<div class="label-tel-email-note">Ruangan di bawah adalah tidak wajib. Tapi akan membantu memudahkan urusan pengerusi majlis.</div>
-										</div>
-										
-										
-										<section class="mt-4">
-											<div class="input-group">
-												<span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
-												<div class="form-floating">
-													<div class="iti iti--allow-dropdown iti--show-flags"><div class="iti__country-container"><button type="button" class="iti__selected-country" aria-expanded="false" aria-label="Selected country" aria-haspopup="true" aria-controls="iti-2__dropdown-content" role="combobox" title="Malaysia: +60"><div class="iti__selected-country-primary"><div class="iti__flag iti__my"><span class="iti__a11y-text">Malaysia +60</span></div><div class="iti__arrow" aria-hidden="true"></div></div></button></div><input type="tel" class="form-control fw-bolder whatsapp_tetamu2 carut iti__tel-input" id="whatsapp_tetamu2" name="whatsapp_tetamu" autocomplete="off" data-intl-tel-input-id="2" placeholder="012-345 6789"></div>
-												</div>
-											</div>
-											<div id="error-msg2" class="hide label-tel-email-error-tel2 f-12 text-danger text-start"></div>
-										</section>
-										
-										
-										<section class="mt-4">
-											<div class="input-group">
-												<span class="input-group-text"><i class="bi bi-envelope"></i></span>
-												<div class="form-floating">
-													<input type="email" class="form-control fw-bolder email_tetamu carut" id="email_tetamu" name="email_tetamu" placeholder="&lt;span class=&#39;label-tel-email-email&#39;&gt;&lt;/span&gt;">
-													<label for="email_tetamu"><span class="label-tel-email-email">E-mel</span></label>
-												</div>
-											</div>
-											
-											<div class="label-tel-email-desc-email mt-1 text-start italic">Masukkan Email untuk anda terima copy pengesahan yang anda buat.</div>
-										</section>
-									</div>
+								
 								</section>
 								
 								
@@ -742,7 +687,7 @@
 								
 								
 								<section class="mt-4 px-1">
-									<button type="submit" class="butang blue rsvp_1_tidak_save py-3" name="submit">
+									<button type="submit" class="butang blue rsvp_1_tidak_save py-3" name="submit" onclick="submitRSVP()">
 										<i class="ti ti-brand-telegram blue-icon position-absolute top-50 translate-middle-y f-25 c-blue start-4" style=""></i>
 										<span class="label-btn-hantar">Hantar</span>
 									</button>
@@ -1332,7 +1277,7 @@
 		
 		<script type="text/javascript" src="./kad_items/js/animate-on-scroll.js"></script>
 		<script  type="text/javascript" src="./kad_items/js/sweetalert2.js"></script>
-		
+		<script type="text/javascript" src="./kad_items/js/rsvp_1.js"></script>
 		
 		<script type="text/javascript" src="./kad_items/js/tsparticles.bundle.min.js"></script>
 		
