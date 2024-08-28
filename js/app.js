@@ -43,12 +43,18 @@ function displaySpeeches() {
 
 
 
-// Function to submit the RSVP form
-function submitRSVP(formId) {
-    const form = document.getElementById(formId);
+
+
+
+
+
+
+// Function to submit the RSVP
+function submitRSVP(isAttending) {
+    const form = document.querySelector(`#rsvp_majlis_1_${isAttending ? 'hadir' : 'tidak'} form`);
     const nameInputs = form.querySelectorAll('input[name="nama[]"]');
     const countInput = form.querySelector('input[name="jumlah"]');
-
+    
     let names = [];
     nameInputs.forEach(input => {
         if (input.value.trim()) {
@@ -56,20 +62,23 @@ function submitRSVP(formId) {
         }
     });
 
-    const count = countInput ? parseInt(countInput.value) : 0;
+    // For "Hadir" form, also check for the count
+    const count = isAttending ? parseInt(countInput.value) : 0;
 
-    if (names.length > 0 && count > 0) {
+    if (names.length > 0 && (isAttending ? count > 0 : true)) {
         // Add RSVP to Firestore
         db.collection('rsvps').add({
-            names: names,
-            count: count,
+            name: names.join(', '),
+            count: isAttending ? count : 0,
             timestamp: firebase.firestore.FieldValue.serverTimestamp()
         }).then(() => {
             // Clear the form
             form.reset();
             // Close the offcanvas
-            const offcanvas = new bootstrap.Offcanvas(document.getElementById(form.closest('.offcanvas').id));
-            offcanvas.hide();
+            const offcanvas = bootstrap.Offcanvas.getInstance(document.querySelector(`#rsvp_majlis_1_${isAttending ? 'hadir' : 'tidak'}`));
+            if (offcanvas) {
+                offcanvas.hide();
+            }
         }).catch((error) => {
             console.error("Error adding RSVP: ", error);
         });
@@ -89,7 +98,7 @@ function displayRSVPs() {
             const rsvp = doc.data();
             const rsvpItem = document.createElement('div');
             rsvpItem.classList.add('rsvp-item', 'my-3', 'p-3', 'border', 'rounded');
-            rsvpItem.innerHTML = `<strong>${rsvp.names.join(', ')}:</strong> <p>Number of People: ${rsvp.count}</p>`;
+            rsvpItem.innerHTML = `<strong>${rsvp.name}:</strong> <p>Number of People: ${rsvp.count}</p>`;
             rsvpList.appendChild(rsvpItem);
         });
     });
@@ -99,22 +108,13 @@ function displayRSVPs() {
 document.addEventListener('DOMContentLoaded', () => {
     displaySpeeches();
     displayRSVPs();
-    
-    // Attach submit event listeners to forms
-    const hadirForm = document.getElementById('rsvpFormHadir');
-    const tidakForm = document.getElementById('rsvpFormTidak');
 
-    if (hadirForm) {
-        hadirForm.addEventListener('submit', (event) => {
-            event.preventDefault();
-            submitRSVP('rsvpFormHadir');
-        });
-    }
+    // Add event listeners for submit buttons
+    document.querySelectorAll('.rsvp_1_hadir_save').forEach(button => {
+        button.addEventListener('click', () => submitRSVP(true));
+    });
 
-    if (tidakForm) {
-        tidakForm.addEventListener('submit', (event) => {
-            event.preventDefault();
-            submitRSVP('rsvpFormTidak');
-        });
-    }
+    document.querySelectorAll('.rsvp_1_tidak_save').forEach(button => {
+        button.addEventListener('click', () => submitRSVP(false));
+    });
 });
