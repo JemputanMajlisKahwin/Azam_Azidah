@@ -39,25 +39,42 @@ function displaySpeeches() {
     });
 }
 
-// Function to submit the RSVP
-function submitRSVP() {
-    const name = document.getElementById('rsvpName').value.trim();
-    const count = document.getElementById('rsvpCount').value;
 
-    if (name && count) {
+
+
+
+// Function to submit the RSVP form
+function submitRSVP(formId) {
+    const form = document.getElementById(formId);
+    const nameInputs = form.querySelectorAll('input[name="nama[]"]');
+    const countInput = form.querySelector('input[name="jumlah"]');
+
+    let names = [];
+    nameInputs.forEach(input => {
+        if (input.value.trim()) {
+            names.push(input.value.trim());
+        }
+    });
+
+    const count = countInput ? parseInt(countInput.value) : 0;
+
+    if (names.length > 0 && count > 0) {
         // Add RSVP to Firestore
         db.collection('rsvps').add({
-            name: name,
-            count: parseInt(count),
+            names: names,
+            count: count,
             timestamp: firebase.firestore.FieldValue.serverTimestamp()
         }).then(() => {
             // Clear the form
-            document.getElementById('rsvpForm').reset();
+            form.reset();
+            // Close the offcanvas
+            const offcanvas = new bootstrap.Offcanvas(document.getElementById(form.closest('.offcanvas').id));
+            offcanvas.hide();
         }).catch((error) => {
             console.error("Error adding RSVP: ", error);
         });
     } else {
-        alert('Please fill out all fields.');
+        alert('Please fill out all required fields.');
     }
 }
 
@@ -72,7 +89,7 @@ function displayRSVPs() {
             const rsvp = doc.data();
             const rsvpItem = document.createElement('div');
             rsvpItem.classList.add('rsvp-item', 'my-3', 'p-3', 'border', 'rounded');
-            rsvpItem.innerHTML = `<strong>${rsvp.name}:</strong> <p>Number of People: ${rsvp.count}</p>`;
+            rsvpItem.innerHTML = `<strong>${rsvp.names.join(', ')}:</strong> <p>Number of People: ${rsvp.count}</p>`;
             rsvpList.appendChild(rsvpItem);
         });
     });
@@ -80,6 +97,24 @@ function displayRSVPs() {
 
 // Load RSVPs on page load
 document.addEventListener('DOMContentLoaded', () => {
-      displaySpeeches();
+    displaySpeeches();
     displayRSVPs();
+    
+    // Attach submit event listeners to forms
+    const hadirForm = document.getElementById('rsvpFormHadir');
+    const tidakForm = document.getElementById('rsvpFormTidak');
+
+    if (hadirForm) {
+        hadirForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            submitRSVP('rsvpFormHadir');
+        });
+    }
+
+    if (tidakForm) {
+        tidakForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            submitRSVP('rsvpFormTidak');
+        });
+    }
 });
