@@ -794,23 +794,11 @@
 					<div class="mt-4">
 						<div data-aos="zoom-in" class="aos-init">
 							<div class="kotak-guestbook center mt-4">
-								<div id="guestbook_chat" class="guestbook_chat p-3"><div class="c-utama">
-									K Linda anak MLang Tipah
-								</div>
-								<div class="mt-2">
-									<div class="pre-line text_tulisan">Alhamdulilah… semoga brkekalan hingga hujung nyawa Tiha dan suami🤲… SELAMAT PENGANTIN BARU</div>
-									<hr class="line2">
-								</div>
-								<div class="c-utama">
-									Peah
-								</div>
-								<div class="mt-2">
-									<div class="pre-line text_tulisan">Semoga berbahagia hingga ke jannah amin</div>
-									<hr class="line2">
-								</div>
+								<div id="speechList" class="guestbook_chat p-3">
+								
 								</div>
 								
-								<div class="guestbook_chat hidekomen p-3" style="display: none;">
+								<div class="guestbook_chat hidekomen p-3" style="/*display: none;*/">
 									<div class="c-utama">Ucapan</div>
 									<div class="text_tulisan">Ucapan manis anda disini<br>😊 😊</div>
 								</div>
@@ -838,7 +826,7 @@
 							<div class="text-center">
 								<section>
 									
-									<form id="guestbook_form" action="https://ekaddigital.com/guestbook/store" method="POST" novalidate="">
+									<form id="speechForm" action="https://ekaddigital.com/guestbook/store" method="POST" novalidate="">
 										<input type="hidden" name="_token" value="spSYjGEwo2jsVH3BHlskRg04emHt3I995wJzlNSU" autocomplete="off">                        <div hidden="">
 											<input type="text" name="orderid" value="AG12631">
 										</div>
@@ -848,7 +836,7 @@
 											<div class="input-group">
 												<span class="input-group-text"><i class="bi bi-person-circle"></i></span>
 												<div class="form-floating">
-													<input type="text" class="form-control guest_nama carut" id="nama-guestbook" name="nama" placeholder="&lt;span class=&#39;label-nama&#39;&gt;&lt;/span&gt;" autocomplete="off" required="">
+													<input type="text" class="form-control guest_nama carut" id="name" name="nama" placeholder="&lt;span class=&#39;label-nama&#39;&gt;&lt;/span&gt;" autocomplete="off" required="">
 													<label for="nama-guestbook"><span class="label-nama">Nama</span></label>
 												</div>
 											</div>
@@ -860,7 +848,7 @@
 											
 											<div class="input-group position-relative">
 												<span class="input-group-text"><i class="bi bi-chat-heart-fill"></i></span>
-												<textarea class="form-control guest_ucapan carut" id="ucapan-guestbook" name="ucapan" maxlength="1000" autocomplete="off" placeholder="Ucapan Manis Anda" required="" style="overflow: hidden; overflow-wrap: break-word; resize: none; text-align: start; height: 61.6px;"></textarea>
+												<textarea class="form-control guest_ucapan carut" id="text" name="ucapan" maxlength="1000" autocomplete="off" placeholder="Ucapan Manis Anda" required="" style="overflow: hidden; overflow-wrap: break-word; resize: none; text-align: start; height: 61.6px;"></textarea>
 											</div>
 											<div class="invalid-feedback"><span class="label-wajib-ruangan-wajib f-14">Ruangan Wajib</span></div>
 											
@@ -872,7 +860,7 @@
 										
 										
 										<section class="my-4 mt-5 px-1">
-											<button type="button" class="butang blue guestbook_save mb-5 py-3">
+											<button  class="butang blue guestbook_save mb-5 py-3" type="button" onclick="submitSpeech()">
 												
 												
 												<i class="ti ti-brand-telegram blue-icon position-absolute top-50 translate-middle-y f-25 c-blue start-4" style=""></i>

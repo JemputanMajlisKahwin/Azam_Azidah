@@ -32,8 +32,8 @@ function displaySpeeches() {
         querySnapshot.forEach((doc) => {
             const speech = doc.data();
             const speechItem = document.createElement('div');
-            speechItem.classList.add('speech-item', 'my-3', 'p-3', 'border', 'rounded');
-            speechItem.innerHTML = `<strong>${speech.name}:</strong> <p>${speech.text}</p>`;
+            speechItem.classList.add('speech-item', 'my-2', 'p-2', 'border', 'rounded');
+            speechItem.innerHTML = `<strong class="c-utama">${speech.name}:</strong> <p class="pre-line text_tulisan">${speech.text}</p>`;
             speechList.appendChild(speechItem);
         });
     });
