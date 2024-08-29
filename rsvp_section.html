@@ -270,6 +270,7 @@
 
     
 
+
 // Function to submit the RSVP form
 function submitRSVP(formId) {
     const form = document.getElementById(formId);
@@ -285,25 +286,100 @@ function submitRSVP(formId) {
 
     const count = countInput ? parseInt(countInput.value) : 0;
 
-    if (names.length > 0 && count > 0) {
-        // Add RSVP to Firestore
-        db.collection('rsvps').add({
-            names: names,
-            count: count,
-            timestamp: firebase.firestore.FieldValue.serverTimestamp()
-        }).then(() => {
-            // Clear the form
-            form.reset();
-            // Close the offcanvas
-            const offcanvas = new bootstrap.Offcanvas(document.getElementById(form.closest('.offcanvas').id));
-            offcanvas.hide();
-        }).catch((error) => {
-            console.error("Error adding RSVP: ", error);
-        });
-    } else {
-        alert('Please fill out all required fields.');
+    // Show loading screen
+    document.getElementById('loading-screen').style.display = 'block';
+
+    if (formId === 'rsvpFormHadir') {
+        // Validation for "Hadir" form
+        if (names.length > 0 && count > 0) {
+            // Add RSVP to Firestore
+            db.collection('rsvps').add({
+                names: names,
+                count: count,
+                timestamp: firebase.firestore.FieldValue.serverTimestamp()
+            }).then(() => {
+                // Hide loading screen and show success alert
+                document.getElementById('loading-screen').style.display = 'none';
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'BERJAYA',
+                    showConfirmButton: false,
+                    timer: 3000
+                });
+                form.reset(); // Reset the form
+                document.querySelector('.finish-hadir').click(); // Close modal
+                document.getElementById('form').style.display = 'none';
+                document.getElementById('formfinish').style.display = 'block';
+                document.getElementById('formfinish_contain').innerHTML = formValuesHtml; // Display the form values
+            }).catch((error) => {
+                // Hide loading screen and show error alert
+                document.getElementById('loading-screen').style.display = 'none';
+                console.error("Error adding RSVP: ", error);
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'Something went wrong!',
+                });
+            });
+        } else {
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Validation Error',
+                text: 'For attending ("Hadir"), please provide both the names and the number of people.',
+            });
+            // Hide loading screen if validation fails
+            document.getElementById('loading-screen').style.display = 'none';
+        }
+    } else if (formId === 'rsvpFormTidak') {
+        // Validation for "Tidak Hadir" form
+        if (names.length > 0) {
+            // Add RSVP to Firestore
+            db.collection('rsvps').add({
+                names: names,
+                count: 0, // No count needed for "Tidak Hadir"
+                timestamp: firebase.firestore.FieldValue.serverTimestamp()
+            }).then(() => {
+                // Hide loading screen and show success alert
+                document.getElementById('loading-screen').style.display = 'none';
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'BERJAYA',
+                    showConfirmButton: false,
+                    timer: 3000
+                });
+                form.reset(); // Reset the form
+                document.querySelector('.finish-tidak').click(); // Close modal
+                document.getElementById('form').style.display = 'none';
+                document.getElementById('formfinish').style.display = 'block';
+                document.getElementById('formfinish_contain').innerHTML = formValuesHtml; // Display the form values
+            }).catch((error) => {
+                // Hide loading screen and show error alert
+                document.getElementById('loading-screen').style.display = 'none';
+                console.error("Error adding RSVP: ", error);
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'Something went wrong!',
+                });
+            });
+        } else {
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Validation Error',
+                text: 'For not attending ("Tidak Hadir"), please provide at least one name.',
+            });
+            // Hide loading screen if validation fails
+            document.getElementById('loading-screen').style.display = 'none';
+        }
     }
 }
+
 
 // Function to display the list of RSVPs
 function displayRSVPs() {
@@ -322,29 +398,109 @@ function displayRSVPs() {
     });
 }
 
-// Load RSVPs on page load
+// Function to submit the speech
+function submitSpeech() {
+    const name = document.getElementById('name').value.trim();
+    const text = document.getElementById('text').value.trim();
+
+    if (name && text) {
+        // Show loading screen
+        document.getElementById('loading-screen').style.display = 'block';
+
+        // Add Speech to Firestore
+        db.collection('speeches').add({
+            name: name,
+            text: text,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp()
+        }).then(() => {
+            // Hide loading screen and show success alert
+            document.getElementById('loading-screen').style.display = 'none';
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Speech Submitted Successfully',
+                showConfirmButton: false,
+                timer: 3000
+            });
+            // Clear the form
+            document.getElementById('speechForm').reset();
+            // Optionally, update the list of speeches
+            displaySpeeches();
+        }).catch((error) => {
+            // Hide loading screen and show error alert
+            document.getElementById('loading-screen').style.display = 'none';
+            console.error("Error adding speech: ", error);
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Error',
+                text: 'Something went wrong while submitting the speech.',
+            });
+        });
+    } else {
+        Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: 'Validation Error',
+            text: 'Please fill out both fields.',
+        });
+        // Hide loading screen if validation fails
+        document.getElementById('loading-screen').style.display = 'none';
+    }
+}
+
+// Function to display the list of speeches
+function displaySpeeches() {
+    const speechList = document.getElementById('speechList');
+    speechList.innerHTML = ''; // Clear the list before updating
+
+    db.collection('speeches').orderBy('timestamp', 'desc').onSnapshot((querySnapshot) => {
+        speechList.innerHTML = ''; // Clear the list before updating
+        querySnapshot.forEach((doc) => {
+            const speech = doc.data();
+            const speechItem = document.createElement('div');
+            speechItem.classList.add('speech-item', 'my-2', 'p-2', 'border', 'rounded');
+            speechItem.innerHTML = `<strong class="c-utama">${speech.name}:</strong> <p class="pre-line text_tulisan">${speech.text}</p>`;
+            speechList.appendChild(speechItem);
+        });
+    });
+}
+
+
+
+// Load RSVPs and speeches on page load
 document.addEventListener('DOMContentLoaded', () => {
-    displayRSVPs();
+    displaySpeeches(); // Load speeches
+    displayRSVPs();    // Load RSVPs
     
     // Attach submit event listeners to forms
-    const hadirForm = document.getElementById('rsvpFormHadir');
-    const tidakForm = document.getElementById('rsvpFormTidak');
 
-    if (hadirForm) {
-        hadirForm.addEventListener('submit', (event) => {
-            event.preventDefault();
-            submitRSVP('rsvpFormHadir');
-        });
-    }
-
-    if (tidakForm) {
-        tidakForm.addEventListener('submit', (event) => {
-            event.preventDefault();
-            submitRSVP('rsvpFormTidak');
-        });
-    }
-});
-
+        const hadirForm = document.getElementById('rsvpFormHadir');
+        const tidakForm = document.getElementById('rsvpFormTidak');
+        const speechForm = document.getElementById('speechForm');
+    
+        if (hadirForm) {
+            hadirForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                submitRSVP('rsvpFormHadir');
+            });
+        }
+    
+        if (tidakForm) {
+            tidakForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                submitRSVP('rsvpFormTidak');
+            });
+        }
+    
+        if (speechForm) {
+            speechForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                submitSpeech();
+            });
+        }
+    });
+    
 
 
 </script>

@@ -1,3 +1,4 @@
+const jumlah_majlis = "";
 const jenis_ekad = "Luxury";
 
 

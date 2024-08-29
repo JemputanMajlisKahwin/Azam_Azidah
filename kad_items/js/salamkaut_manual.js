@@ -1,4 +1,6 @@
-// Copy nombor
+
+
+// Add event listener for the button
 document.getElementById("copy_no_acc").addEventListener("click", async () => {
     try {
         await navigator.clipboard.writeText(no_acc);
@@ -6,9 +8,7 @@ document.getElementById("copy_no_acc").addEventListener("click", async () => {
         // Show SweetAlert2 notification
         Swal.fire({
             icon: "success",
-            // title: 'Berjaya Salin',
-            text: currentLanguage.alert_popup_success_text_copy_akaun,
-            // timer: 2000,
+            text: "Nombor Akaun telah Disalin",  // Updated text
             showConfirmButton: true,
             customClass: {
                 confirmButton: "butang black px-5 py-2 rounded-pill",
