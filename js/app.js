@@ -14,14 +14,15 @@ function submitRSVP(formId) {
         }
     });
     
-    const count = countInput ? parseInt(countInput.value) : 0;
+    // Ensure the count is a number and default to 0 if invalid
+    const count = countInput ? parseInt(countInput.value, 10) : 0;
     
     // Show loading screen
     document.getElementById('loading-screen').style.display = 'block';
     
     if (formId === 'rsvpFormHadir') {
         // Validation for "Hadir" form
-        if (names.length > 0 && count > 0) {
+        if (names.length > 0 && !isNaN(count) && count > 0) {
             // Add RSVP to Firestore
             db.collection('rsvps').add({
                 names: names,
@@ -112,24 +113,49 @@ function submitRSVP(formId) {
 
 
 
-// Function to display the list of RSVPs
+
+// Function to display the list of RSVPs and total number of attendees
 function displayRSVPs() {
     const rsvpList = document.getElementById('attendeesList');
+    const totalAttendees = document.getElementById('totalAttendees');
+    let totalCount = 0;
+
     rsvpList.innerHTML = ''; // Clear the list before updating
 
     db.collection('rsvps').orderBy('timestamp', 'desc').onSnapshot((querySnapshot) => {
         rsvpList.innerHTML = ''; // Clear the list before updating
+        totalCount = 0; // Reset total count
+
         querySnapshot.forEach((doc) => {
             const rsvp = doc.data();
-            // console.log('RSVP Data:', rsvp); // Log the data
             const names = Array.isArray(rsvp.names) ? rsvp.names : [];
+            const count = Number(rsvp.count); // Ensure count is a number
+
+            // Log the data to check types
+            // console.log('RSVP Data:', rsvp);
+            // console.log('Count:', count);
+
             const rsvpItem = document.createElement('div');
             rsvpItem.classList.add('rsvp-item', 'my-3', 'p-3', 'border', 'rounded');
-            rsvpItem.innerHTML = `<strong>${names.join(', ')}:</strong> <p>Number of People: ${rsvp.count}</p>`;
+            rsvpItem.innerHTML = `<strong>${names.join(', ')}:</strong> <p>Number of People: ${count}</p>`;
             rsvpList.appendChild(rsvpItem);
+
+            // Accumulate the total count
+            if (!isNaN(count)) {
+                totalCount += count;
+            } else {
+                console.error('Invalid count value:', count);
+            }
         });
+
+        // Display the total number of attendees
+        if (totalAttendees) {
+            totalAttendees.textContent = `${totalCount} Tetamu Jemputan`;
+        }
     });
 }
+
+
 
 
 // Function to submit the speech
