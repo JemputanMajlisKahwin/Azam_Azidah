@@ -120,13 +120,16 @@ function displayRSVPs() {
         rsvpList.innerHTML = ''; // Clear the list before updating
         querySnapshot.forEach((doc) => {
             const rsvp = doc.data();
+            // console.log('RSVP Data:', rsvp); // Log the data
+            const names = Array.isArray(rsvp.names) ? rsvp.names : [];
             const rsvpItem = document.createElement('div');
             rsvpItem.classList.add('rsvp-item', 'my-3', 'p-3', 'border', 'rounded');
-            rsvpItem.innerHTML = `<strong>${rsvp.names.join(', ')}:</strong> <p>Number of People: ${rsvp.count}</p>`;
+            rsvpItem.innerHTML = `<strong>${names.join(', ')}:</strong> <p>Number of People: ${rsvp.count}</p>`;
             rsvpList.appendChild(rsvpItem);
         });
     });
 }
+
 
 // Function to submit the speech
 function submitSpeech() {
