@@ -146,13 +146,13 @@
 .italic,
 .description,
 .f-kedua {
-    font-family: "Noto Serif", serif !important;
+    font-family: "Fraunces ", "Fraunces ", "Noto Serif", serif  !important;
     font-weight: 500;
     font-style: italic;
 }
 
 .kurungan-parents {
-    font-family: "Noto Serif", serif !important;
+    font-family: "Fraunces ", "Fraunces ", "Noto Serif", serif  !important;
     font-weight: 500;
 }
 
@@ -178,7 +178,7 @@
 }
 
 .tajuk-section {
-    font-family: "Noto Serif", serif;
+    font-family: "Fraunces ", "Noto Serif", serif ;
     font-size: clamp(14px, 10vw, 20px);
     line-height: 1.2;
     font-weight: 700;
@@ -190,7 +190,7 @@ small {
 }
 
 .tajuk-mini {
-    font-family: "Noto Serif", serif;
+    font-family: "Fraunces ", "Noto Serif", serif ;
     font-weight: 600;
 }
 
