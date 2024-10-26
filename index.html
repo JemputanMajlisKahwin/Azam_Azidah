@@ -1102,57 +1102,85 @@
 											
 											<div class="grid-container">
 												<div class="grid-item text-start">
-													Zaid
+													Azim
 													<div class="italic">
 														Abang Pengantin
 													</div>
 												</div>
-												<a href="tel:+0172878524" class="grid-item show_tel_1 text-end">
+												<a href="tel:+0194310738" class="grid-item show_tel_1 text-end">
 													<img class="icon3" src="./kad_items/image/telephone-call.svg">
 												</a>
-												<a href="https://wa.me/0172878524" class="grid-item show_ws_1 text-end">
+												<a href="https://wa.me/0194310738" class="grid-item show_ws_1 text-end">
 													<img class="icon3" src="./kad_items/image/whatsapp.svg">
 												</a>
 											</div>
 											<div class="grid-container">
 												<div class="grid-item text-start">
-													Naim
+													Shahriman
 													<div class="italic">
 														Abang Pengantin
 													</div>
 												</div>
-												<a href="tel:+01136292917" class="grid-item show_tel_2 text-end">
+												<a href="tel:+0134144102" class="grid-item show_tel_2 text-end">
 													<img class="icon3" src="./kad_items/image/telephone-call.svg">
 												</a>
-												<a href="https://wa.me/01136292917" class="grid-item show_ws_2 text-end">
+												<a href="https://wa.me/0134144102" class="grid-item show_ws_2 text-end">
 													<img class="icon3" src="./kad_items/image/whatsapp.svg">
 												</a>
 											</div>
 											<div class="grid-container">
 												<div class="grid-item text-start">
-													Siti
+													Aziemah
 													<div class="italic">
 														Kakak Pengantin
 													</div>
 												</div>
-												<a href="tel:+01156816165" class="grid-item show_tel_3 text-end">
+												<a href="tel:+0129777294" class="grid-item show_tel_3 text-end">
 													<img class="icon3" src="./kad_items/image/telephone-call.svg">
 												</a>
-												<a href="https://wa.me/01156816165" class="grid-item show_ws_3 text-end">
+												<a href="https://wa.me/0129777294" class="grid-item show_ws_3 text-end">
 													<img class="icon3" src="./kad_items/image/whatsapp.svg">
 												</a>
 											</div>
 											<div class="grid-container">
 												<div class="grid-item text-start">
-													Nurul
+													Diyana
 													<div class="italic">
 														Kakak Pengantin
 													</div>
 												</div>
-												<a href="tel:+0124713067" class="grid-item show_tel_4 text-end">
+												<a href="tel:+0133360287" class="grid-item show_tel_3 text-end">
 													<img class="icon3" src="./kad_items/image/telephone-call.svg">
 												</a>
-												<a href="https://wa.me/0124713067" class="grid-item show_ws_4 text-end">
+												<a href="https://wa.me/0133360287" class="grid-item show_ws_3 text-end">
+													<img class="icon3" src="./kad_items/image/whatsapp.svg">
+												</a>
+											</div>
+											<div class="grid-container">
+												<div class="grid-item text-start">
+													Azizah
+													<div class="italic">
+														Adik Pengantin
+													</div>
+												</div>
+												<a href="tel:+0164487294" class="grid-item show_tel_4 text-end">
+													<img class="icon3" src="./kad_items/image/telephone-call.svg">
+												</a>
+												<a href="https://wa.me/0164487294" class="grid-item show_ws_4 text-end">
+													<img class="icon3" src="./kad_items/image/whatsapp.svg">
+												</a>
+											</div>
+											<div class="grid-container">
+												<div class="grid-item text-start">
+													Azra Izzah
+													<div class="italic">
+														Adik Pengantin
+													</div>
+												</div>
+												<a href="tel:+0143207294" class="grid-item show_tel_4 text-end">
+													<img class="icon3" src="./kad_items/image/telephone-call.svg">
+												</a>
+												<a href="https://wa.me/0143207294"" class="grid-item show_ws_4 text-end">
 													<img class="icon3" src="./kad_items/image/whatsapp.svg">
 												</a>
 											</div>
@@ -1187,7 +1215,7 @@
 												
 												
 												
-												<a href="https://waze.com/ul/hw0zsmc3sm" target="_blank">
+												<a href="https://ul.waze.com/ul?preview_venue_id=65863731.658571777.36587195&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank">
 													<button class="butang blue mb-4">
 														<div class="py-3">
 															<i class="ti ti-brand-waze blue-icon position-absolute top-50 translate-middle-y f-25 start-6" style=""></i>
@@ -1197,7 +1225,7 @@
 												</a>
 												
 												
-												<a href="https://maps.app.goo.gl/hiX2hJ9kHi8tx4TE6?g_st=ic" target="_blank">
+												<a href="https://maps.app.goo.gl/KfxaRFydqAeNBVut6" target="_blank">
 													<button class="butang green mb-4">
 														<div class="py-3">
 															<i class="ti ti-brand-google-maps green-icon position-absolute top-50 translate-middle-y f-25 start-6" style=""></i>
@@ -1214,11 +1242,21 @@
 							</div>
 							
 							
-							<a class="icon2" href="kadkahwinkitaa/AG12631/--CIK-AZIZAH--#rsvp">
+							<a class="icon2 toRSVP" href="#rsvp">
 								<img src="./kad_items/image/navbar_rsvp.svg"><br>Rsvp
 							</a>
 							
-							
+							<script>
+								document.querySelector('.toRSVP').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default anchor behavior
+    const targetId = this.getAttribute('href'); // Get the target ID
+    const targetElement = document.querySelector(targetId); // Select the target element
+    
+    // Smoothly scroll to the target element
+    targetElement.scrollIntoView({ behavior: 'smooth' });
+});
+
+							</script>
 							
 							
 						</div>
