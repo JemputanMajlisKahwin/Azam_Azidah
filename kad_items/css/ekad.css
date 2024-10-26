@@ -1613,7 +1613,7 @@ button.button_utama:hover {
     .nama-pendek,
     .dan {
     color: #5D5D5D;
-    font-family: 'Dancing Script', cursive;;
+    font-family: 'Dancing Script', cursive;
     line-height: 1em;
     }
     
@@ -1627,7 +1627,7 @@ button.button_utama:hover {
     
     .nama-parents,
     .dan1 {
-    font-family: 'Noto Serif', serif;;
+    font-family: 'Fraunces ', 'Noto Serif', serif;
     font-size: 18px;
     line-height: 1.3em;
     }
@@ -1635,7 +1635,7 @@ button.button_utama:hover {
     .nama-panjang,
     .dan2 {
     color: var(--font-color);
-    font-family: 'Dancing Script', cursive;;
+    font-family: 'Dancing Script', cursive;
     font-size: 25px;
     line-height: 1.3em;
     }
@@ -1700,7 +1700,7 @@ button.button_utama:hover {
     
     .calendar__weekday,
     .calendar__day {
-    font-family: 'Raleway', sans-serif;;
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: px;
     }
@@ -3201,9 +3201,7 @@ button.button_utama:hover {
         --cover-teks-color: Black;
               }
         
-              * {
-        font-family: 'Raleway', sans-serif;;
-              }
+
         
               .contain {
         border-left: 1px solid #ededed;
@@ -3241,7 +3239,7 @@ button.button_utama:hover {
               .nama-pendek,
               .dan {
         color: #5D5D5D;
-        font-family: 'Dancing Script', cursive;;
+        font-family: 'Dancing Script', cursive;
         line-height: 1em;
               }
         
@@ -3255,7 +3253,7 @@ button.button_utama:hover {
         
               .nama-parents,
               .dan1 {
-        font-family: 'Noto Serif', serif;;
+        font-family: 'Fraunces ', 'Noto Serif', serif;
         font-size: 18px;
         line-height: 1.3em;
               }
@@ -3263,7 +3261,7 @@ button.button_utama:hover {
               .nama-panjang,
               .dan2 {
         color: var(--font-color);
-        font-family: 'Dancing Script', cursive;;
+        font-family: 'Dancing Script', cursive;
         font-size: 25px;
         line-height: 1.3em;
               }
@@ -3328,7 +3326,7 @@ button.button_utama:hover {
         
               .calendar__weekday,
               .calendar__day {
-        font-family: 'Raleway', sans-serif;;
+        font-family: 'Raleway', sans-serif;
         /* font-weight: ; */
         font-size: px;
               }
