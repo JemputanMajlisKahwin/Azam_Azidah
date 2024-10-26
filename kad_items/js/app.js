@@ -1,15 +1,37 @@
 document.body.style.overflow = "hidden"; // disable scroll
 
 window.addEventListener("load", function () {
-    let loader = document.getElementById("loader");
-    loader.style.display = "none";
 
-    let button = document.querySelector(".close_gate");
+		
+	
+// Main enter button functionality
+
+
+let button = document.querySelector(".enter-btn");
 
     button.addEventListener("click", function () {
         let gate = document.getElementById("gate");
+        const doors = document.querySelectorAll('.sliding-doors');
+        const bodySliding = document.getElementById('bodySliding');
+        const EntbuttonClick = document.querySelector('.enter-btn');
+        
+        // Trigger sliding doors and fade effect
+        doors.forEach(door => {
+            door.classList.toggle('open');
+        });
+        
+        // Add the fade class after a slight delay
+        setTimeout(() => {
+            bodySliding.classList.toggle('fade');
+            EntbuttonClick.classList.toggle('fade');
+        }, 100); // Adjust delay if needed
+        
+        // Set display: none after the fade transition completes
+        setTimeout(() => {
+            bodySliding.style.display = 'none';
+            EntbuttonClick.style.display = 'none';
+        }, 2050); // 1 second for the transition + 100ms delay
 
-        gate.style.display = "none";
         document.body.style.overflow = "auto"; // enable scroll
 
         if (jenis_ekad == "Luxury") {

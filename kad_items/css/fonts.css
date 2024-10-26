@@ -489,3 +489,25 @@
     font-style: normal;
     /* CHINESE SIMPLIFIED */
 }
+
+
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url('../fonts/frauncessoftwonkopszwght.ttf') format('truetype'),
+        url('../fonts/frauncessoftwonkopszwght.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Scriptina';
+    src: url('../fonts/Scriptina.woff2') format('woff2'),
+        url('../fonts/Scriptina.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
