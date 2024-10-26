@@ -3431,4 +3431,8 @@ button.button_utama:hover {
 
 
 
-    
+              div:where(.swal2-container) div:where(.swal2-popup) {
+                position: absolute !important;
+                top: 0;
+                z-index: 99999 !important;
+            }
