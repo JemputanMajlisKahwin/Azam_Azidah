@@ -137,7 +137,7 @@ function displayRSVPs() {
 
             const rsvpItem = document.createElement('div');
             rsvpItem.classList.add('rsvp-item', 'my-3', 'p-3', 'border', 'rounded');
-            rsvpItem.innerHTML = `<strong>${names.join(', ')}:</strong> <p>Number of People: ${count}</p>`;
+            rsvpItem.innerHTML = `<strong>${names.join(', ')}:</strong> <p>Bilangan Orang: ${count}</p>`;
             rsvpList.appendChild(rsvpItem);
 
             // Accumulate the total count
